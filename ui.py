@@ -6,16 +6,39 @@ from tkinter import messagebox
 
 root = tk.Tk()
 root.title("Trivia Game")
-root.geometry("1024x1080")
+root.attributes("-fullscreen", True)
+root.bind("<Escape>", lambda e: root.attributes("-fullscreen", False))
 
-question_label = tk.Label(root, text="", font=("Arial", 16), wraplength=500)
+menu_frame = tk.Frame(root)
+menu_frame.pack(expand=True)
+
+title_label = tk.Label(menu_frame, text="Trivia Los Canos", font=("Arial", 48, "bold"))
+title_label.pack(pady=20)
+
+tk.Label(menu_frame, text="Team A name:", font=("Arial", 24)).pack()
+team_a_entry = tk.Entry(menu_frame, font=("Arial", 14), width=20)
+team_a_entry.pack(pady=10)
+
+tk.Label(menu_frame, text="Team B name:", font=("Arial", 24)).pack()
+team_b_entry = tk.Entry(menu_frame, font=("Arial", 14), width=20)
+team_b_entry.pack(pady=10)
+
+
+question_label = tk.Label(
+    root,
+    text="",
+    font=("Arial", 36),
+    wraplength=root.winfo_screenwidth() - 400,  # fit most of the TV width
+    justify="center",
+    anchor="center"
+)
 question_label.pack_forget()
 
 button_frame = tk.Frame(root)
 button_frame.pack_forget()
 
 topic_frame = tk.Frame(root)
-topic_frame.pack(pady=20)
+topic_frame.pack_forget()
 
 subtopic_frame = tk.Frame(root)
 subtopic_frame.pack_forget()
@@ -41,21 +64,51 @@ remaining_questions = list_of_questions.copy()
 
 answer_buttons = []
 for i in range(4):
-    btn = tk.Button(button_frame, text="", width=30, height=2)
-    row = i // 2
-    col = i % 2
-    btn.grid(row=row, column=col, padx=10, pady=10)
+    btn = tk.Button(
+        button_frame,
+        text="",
+        font=("Arial", 24),
+        height=5,
+        width=30,
+        wraplength=(root.winfo_screenwidth() // 2) - 100,
+        justify="center"
+    )
+    row = i // 2   # 0 or 1
+    col = i % 2    # 0 or 1
+    btn.grid(row=row, column=col, padx=40, pady=20, sticky="nsew")
     answer_buttons.append(btn)
-
+for r in range(2):
+    button_frame.grid_rowconfigure(r, weight=1)
+for c in range(2):
+    button_frame.grid_columnconfigure(c, weight=1)
+    
 # Label for scores
-score_label = tk.Label(root, text=f"Team A: 0  |  Team B: 0", font=("Arial", 14))
-score_label.pack(pady=10)
+score_label = tk.Label(root, text=f"Team A: 0  |  Team B: 0", font=("Arial", 28))
+score_label.pack_forget()
 
 # Label for current team
-team_label = tk.Label(root, text=f"Current team: {current_team}", font=("Arial", 14))
-team_label.pack(pady=5)
+team_label = tk.Label(root, text=f"Current team: {current_team}", font=("Arial", 28))
+team_label.pack_forget()
 
+def start_game():
+    
+    team_a_name = team_a_entry.get().strip() or "Team A"
+    team_b_name = team_b_entry.get().strip() or "Team B"
 
+    # Reset scores dictionary with custom names
+    scores = {team_a_name: 0, team_b_name: 0}
+    current_team = team_a_name
+
+    # Update labels
+    score_label.config(text=f"{team_a_name}: 0  |  {team_b_name}: 0")
+    team_label.config(text=f"Current team: {current_team}")
+
+    # Hide menu, show game
+    menu_frame.pack_forget()
+    show_topics()
+
+start_button = tk.Button(menu_frame, text="Start Game", font=("Arial", 28), width=15, height=2, command=start_game)
+start_button.pack(pady=20)
 def load_question():
     global current_question, remaining_questions
 
@@ -108,7 +161,7 @@ def check_answer(selected_answer):
 def reset_buttons_and_show_topics():
     # Reset button colors and enable them
     for btn in answer_buttons:
-        btn.config(bg="lightgray", fg="black", state="normal")
+        btn.config(bg="gray90", fg="black", state="normal")
 
     # Hide question label and button frame
     question_label.pack_forget()
@@ -119,6 +172,8 @@ def reset_buttons_and_show_topics():
 
 def show_topics():
     topic_frame.pack(pady=20)
+    team_label.pack(pady=20)
+    score_label.pack(pady=20)
     subtopic_frame.pack_forget()
     question_label.pack_forget()
     button_frame.pack_forget()
@@ -131,10 +186,11 @@ def show_topics():
     # Get all topics that have at least one remaining question
     available_topics = sorted(set(q.main_topic for q in remaining_questions))
 
-    tk.Label(topic_frame, text=f"{current_team}, choose a topic:", font=("Arial", 14)).pack(pady=5)
+    tk.Label(topic_frame, text=f"{current_team}, choose a topic:", font=("Arial", 24)).pack(pady=5)
 
     for topic in available_topics:
-        btn = tk.Button(topic_frame, text=topic, width=20, height=2,
+        btn = tk.Button(topic_frame, text=topic, width=25, height=3,
+                        font=("Arial", 22),
                         command=lambda t=topic: show_subtopics(t))
         btn.pack(pady=2)
 
@@ -150,16 +206,17 @@ def show_subtopics(chosen_topic):
         q.sub_topic for q in remaining_questions if q.main_topic == chosen_topic
     ))
 
-    tk.Label(subtopic_frame, text=f"{current_team}, choose a subtopic:", font=("Arial", 14)).pack(pady=5)
+    tk.Label(subtopic_frame, text=f"{current_team}, choose a subtopic:", font=("Arial", 24)).pack(pady=5)
 
     for subtopic in available_subtopics:
-        btn = tk.Button(subtopic_frame, text=subtopic, width=20, height=2,
+        btn = tk.Button(subtopic_frame, text=subtopic, width=24, height=3,
+                        font=("Arial", 22),
                         command=lambda st=subtopic: start_question(chosen_topic, st))
         btn.pack(pady=2)
 
 def start_question(topic, subtopic):
     subtopic_frame.pack_forget()
-    question_label.pack(pady=20)
+    question_label.pack(pady=40, expand=True, fill="both")
     button_frame.pack(pady=20)
     # Clear topic/subtopic buttons
     for widget in topic_frame.winfo_children():
@@ -188,5 +245,5 @@ def start_question(topic, subtopic):
         btn.config(text=options[i], command=lambda opt=options[i]: check_answer(opt))
 
 
-show_topics()
+
 root.mainloop()

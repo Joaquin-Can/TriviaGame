@@ -3,7 +3,7 @@
         "sub_topic": "Física",
         "question_text": "¿Cuál es la velocidad aproximada de la luz?",
         "right_answer": "300.000 km/s",
-        "wrong_answers": ["200.000 km/s","300.000 km/h","700.000 km/h"]
+        "wrong_answers": ["200.000 km/s","300.000 km/h","200.000 km/h"]
     },
     {   "main_topic": "Ciencia",
         "sub_topic": "Astronomía",
