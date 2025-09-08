@@ -1,0 +1,45 @@
+[
+    {   "main_topic": "Ciencia",
+        "sub_topic": "Física",
+        "question_text": "¿Cuál es la velocidad aproximada de la luz?",
+        "right_answer": "300.000 km/s",
+        "wrong_answers": ["200.000 km/s","300.000 km/h","700.000 km/h"]
+    },
+    {   "main_topic": "Ciencia",
+        "sub_topic": "Astronomía",
+        "question_text": "¿Cuál es el planeta más grande en la vía láctea?",
+        "right_answer": "Júpiter",
+        "wrong_answers": ["Neptuno", "Urano", "Saturno"]
+
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Capitales",
+        "question_text": "¿Cuál es la capital de Dinamarca?",
+        "right_answer": "Copenaghue",
+        "wrong_answers": ["Helsinki", "Bratislava", "Estocolmo"]
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Capitales",
+        "question_text": "¿Cuál es la capital de Indonesia?",
+        "right_answer": "Yakarta",
+        "wrong_answers": ["Bangkok", "Baku", "Nueva Delhi"]
+    },
+    {
+        "main_topic": "Arte",
+        "sub_topic": "Pinturas",
+        "question_text": "¿En que museo se encuentra actualmente el retrato original de la Mona Lisa?",
+        "right_answer": "En el museo de Louvre, en Paris",
+        "wrong_answers": ["En el museo Británico, en Londres", "En el museo de arte metropolitano, en Nueva York", "En el museo del Vaticano, en la ciudad del Vaticano"]
+    }
+    
+
+
+
+
+
+
+
+
+]
