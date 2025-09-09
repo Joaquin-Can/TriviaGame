@@ -13,6 +13,49 @@
 
     },
     {
+        "main_topic": "Ciencia",
+        "sub_topic": "Biología",
+        "question_text": "¿Cuál de estos animales no es un insecto?",
+        "right_answer": "Garrapata",
+        "wrong_answers": ["Libélula", "Chinche", "Polilla"]
+    },
+    {
+        "main_topic": "Ciencia",
+        "sub_topic": "Química",
+        "question_text": "¿Cuál de los siguientes elementos periódicos no es considerado un gas noble?",
+        "right_answer": "Oxígeno",
+        "wrong_answers": ["Helio", "Xenón", "Radón"]
+    },
+    {
+        "main_topic": "Ciencia",
+        "sub_topic": "Anatomía",
+        "question_text": "¿Cuál es el hueso más largo del cuerpo humano?",
+        "right_answer": "El fémur",
+        "wrong_answers": ["La tibia", "El húmero", "El radio"]
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Biomas",
+        "question_text": "¿Cuál de estos biomas terrestres se caracterizan por temperaturas extremadamente frías, escasas precipitaciones, vientos fuertes y la presencia de permafrost?",
+        "right_answer": "La Tundra",
+        "wrong_answers": ["La Taiga", "El Chaparral", "La Sabana"]
+
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Localización",
+        "question_text": "¿En que continente se encuentran las cataratas del Niágara?",
+        "right_answer": "En el continenete Norteamericano",
+        "wrong_answers": ["En el continenete Sudamericano", "En el continenete Europeo", "En el continenete Asiático"]
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Climatología",
+        "question_text": "¿Cuál de los siguientes elementos no es necesario para la formación de un tornado?",
+        "right_answer": "Alta actividad eléctrica",
+        "wrong_answers": ["Aire cálido y humedo cerca del suelo", "Aire frío y seco en altura", "Cambio de velocidad del viento con altura"]
+    },
+    {
         "main_topic": "Geografía",
         "sub_topic": "Capitales",
         "question_text": "¿Cuál es la capital de Dinamarca?",
@@ -27,7 +70,15 @@
         "wrong_answers": ["Bangkok", "Baku", "Nueva Delhi"]
     },
     {
-        "main_topic": "Arte",
+        "main_topic": "Geografía",
+        "sub_topic": "Geografía de la población",
+        "question_text": "¿Cuál es el país más poblado de la tierra?",
+        "right_answer": "India",
+        "wrong_answers": ["China", "Rusia", "Estados Unidos"]
+
+    },
+    {
+        "main_topic": "Arte y Literatura",
         "sub_topic": "Pinturas",
         "question_text": "¿En que museo se encuentra actualmente el retrato original de la Mona Lisa?",
         "right_answer": "En el museo de Louvre, en Paris",
