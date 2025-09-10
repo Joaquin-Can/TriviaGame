@@ -3,6 +3,8 @@ import random
 from questions import Question
 import tkinter as tk
 from tkinter import messagebox
+from PIL import Image, ImageTk
+import os
 
 root = tk.Tk()
 root.title("Trivia Game")
@@ -89,6 +91,14 @@ score_label.pack_forget()
 # Label for current team
 team_label = tk.Label(root, text=f"Current team: {current_team}", font=("Arial", 28))
 team_label.pack_forget()
+
+button_images = {}  # keep references to prevent garbage collection
+
+def load_button_image(path, size=(300, 150)):
+    if not os.path.exists(path):
+        return None
+    img = Image.open(path).resize(size, Image.LANCZOS)
+    return ImageTk.PhotoImage(img)
 
 def start_game():
     
@@ -177,6 +187,7 @@ def show_topics():
     subtopic_frame.pack_forget()
     question_label.pack_forget()
     button_frame.pack_forget()
+
     # Clear previous buttons
     for widget in topic_frame.winfo_children():
         widget.destroy()
@@ -189,14 +200,35 @@ def show_topics():
     tk.Label(topic_frame, text=f"{current_team}, choose a topic:", font=("Arial", 24)).pack(pady=5)
 
     for topic in available_topics:
-        btn = tk.Button(topic_frame, text=topic, width=25, height=3,
-                        font=("Arial", 22),
-                        command=lambda t=topic: show_subtopics(t))
-        btn.pack(pady=2)
+        image_path = f"images/{topic}.jpg"  # Example: images/Science.jpg
+        img = load_button_image(image_path)
+        button_images[topic] = img  # keep reference
+
+        if img:
+            btn = tk.Button(
+                topic_frame,
+                text=topic,
+                font=("Arial", 22, "bold"),
+                image=img,
+                compound="center",  # text overlays image
+                width=300, height=150,
+                command=lambda t=topic: show_subtopics(t)
+            )
+        else:
+            btn = tk.Button(
+                topic_frame,
+                text=topic,
+                font=("Arial", 22, "bold"),
+                width=25, height=3,
+                command=lambda t=topic: show_subtopics(t)
+            )
+        btn.pack(pady=10)
+
 
 def show_subtopics(chosen_topic):
     topic_frame.pack_forget()
     subtopic_frame.pack(pady=20)
+
     # Clear previous subtopic buttons
     for widget in subtopic_frame.winfo_children():
         widget.destroy()
@@ -209,10 +241,29 @@ def show_subtopics(chosen_topic):
     tk.Label(subtopic_frame, text=f"{current_team}, choose a subtopic:", font=("Arial", 24)).pack(pady=5)
 
     for subtopic in available_subtopics:
-        btn = tk.Button(subtopic_frame, text=subtopic, width=24, height=3,
-                        font=("Arial", 22),
-                        command=lambda st=subtopic: start_question(chosen_topic, st))
-        btn.pack(pady=2)
+        image_path = f"images/{chosen_topic}_{subtopic}.jpg"  # Example: images/Science_Physics.jpg
+        img = load_button_image(image_path)
+        button_images[f"{chosen_topic}_{subtopic}"] = img  # keep reference
+
+        if img:
+            btn = tk.Button(
+                subtopic_frame,
+                text=subtopic,
+                font=("Arial", 22, "bold"),
+                image=img,
+                compound="center",
+                width=300, height=150,
+                command=lambda st=subtopic: start_question(chosen_topic, st)
+            )
+        else:
+            btn = tk.Button(
+                subtopic_frame,
+                text=subtopic,
+                font=("Arial", 22, "bold"),
+                width=24, height=3,
+                command=lambda st=subtopic: start_question(chosen_topic, st)
+            )
+        btn.pack(pady=10)
 
 def start_question(topic, subtopic):
     subtopic_frame.pack_forget()

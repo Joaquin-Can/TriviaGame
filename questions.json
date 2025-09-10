@@ -83,6 +83,41 @@
         "question_text": "¿En que museo se encuentra actualmente el retrato original de la Mona Lisa?",
         "right_answer": "En el museo de Louvre, en Paris",
         "wrong_answers": ["En el museo Británico, en Londres", "En el museo de arte metropolitano, en Nueva York", "En el museo del Vaticano, en la ciudad del Vaticano"]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Películas",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Creencias",
+        "sub_topic": "Griegos",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Historía Argentina",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Moda",
+        "sub_topic": "Ropa",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
     }
     
 
