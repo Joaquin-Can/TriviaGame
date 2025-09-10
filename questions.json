@@ -1,12 +1,19 @@
 [
     {   "main_topic": "Ciencia",
-        "sub_topic": "Física",
+        "sub_topic": "Física y Matemáticas",
         "question_text": "¿Cuál es la velocidad aproximada de la luz?",
         "right_answer": "300.000 km/s",
         "wrong_answers": ["200.000 km/s","300.000 km/h","200.000 km/h"]
     },
+    {
+        "main_topic": "Ciencia",
+        "sub_topic": "Física y Matemáticas",
+        "question_text": "¿Cuál de las siguientes expresiones matemáticas, representa una parábola en el plano cartesiano?",
+        "right_answer": "y = x²",
+        "wrong_answers": ["y = x", "y = x³", "y = x⁴"]
+    },
     {   "main_topic": "Ciencia",
-        "sub_topic": "Astronomía",
+        "sub_topic": "Astronomia",
         "question_text": "¿Cuál es el planeta más grande en la vía láctea?",
         "right_answer": "Júpiter",
         "wrong_answers": ["Neptuno", "Urano", "Saturno"]
@@ -15,7 +22,7 @@
     {
         "main_topic": "Ciencia",
         "sub_topic": "Biología",
-        "question_text": "¿Cuál de estos animales no es un insecto?",
+        "question_text": "¿Cuál de los siguientes animales no es un insecto?",
         "right_answer": "Garrapata",
         "wrong_answers": ["Libélula", "Chinche", "Polilla"]
     },
@@ -45,8 +52,8 @@
         "main_topic": "Geografía",
         "sub_topic": "Localización",
         "question_text": "¿En que continente se encuentran las cataratas del Niágara?",
-        "right_answer": "En el continenete Norteamericano",
-        "wrong_answers": ["En el continenete Sudamericano", "En el continenete Europeo", "En el continenete Asiático"]
+        "right_answer": "En el continenete Americano",
+        "wrong_answers": ["En el continenete Africano", "En el continenete Europeo", "En el continenete Asiático"]
     },
     {
         "main_topic": "Geografía",
@@ -71,7 +78,7 @@
     },
     {
         "main_topic": "Geografía",
-        "sub_topic": "Geografía de la población",
+        "sub_topic": "Población",
         "question_text": "¿Cuál es el país más poblado de la tierra?",
         "right_answer": "India",
         "wrong_answers": ["China", "Rusia", "Estados Unidos"]
@@ -85,8 +92,64 @@
         "wrong_answers": ["En el museo Británico, en Londres", "En el museo de arte metropolitano, en Nueva York", "En el museo del Vaticano, en la ciudad del Vaticano"]
     },
     {
+        "main_topic": "Arte y Literatura",
+        "sub_topic": "Esculturas",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic":"Arte y Literatura",
+        "sub_topic": "Lenguaje",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic":"Arte y Literatura",
+        "sub_topic": "Libros",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Arte y Literatura",
+        "sub_topic": "Arquitectura",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
         "main_topic": "Deportes",
-        "sub_topic": "",
+        "sub_topic": "Reglas",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Mundiales de Fútbol",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Logros",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Clubes de Fútbol",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Atetlas famosos",
         "question_text": "",
         "right_answer": "",
         "wrong_answers": []
@@ -99,15 +162,99 @@
         "wrong_answers": []
     },
     {
-        "main_topic": "Creencias",
-        "sub_topic": "Griegos",
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Series",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Farándula",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Actores y Actrices",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Telenovelas",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Griegos y Romanos",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Cristianismo",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Hinduismo",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Egipcia",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Nórdica",
         "question_text": "",
         "right_answer": "",
         "wrong_answers": []
     },
     {
         "main_topic": "Historia",
-        "sub_topic": "Historía Argentina",
+        "sub_topic": "Historia Argentina",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Guerras",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Personajes Históricos",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Civilizaciones",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Filosofía",
         "question_text": "",
         "right_answer": "",
         "wrong_answers": []
@@ -115,6 +262,34 @@
     {
         "main_topic": "Moda",
         "sub_topic": "Ropa",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Moda",
+        "sub_topic": "Diseñadores",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Moda",
+        "sub_topic": "Marcas",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Moda",
+        "sub_topic": "Supermodelos",
+        "question_text": "",
+        "right_answer": "",
+        "wrong_answers": []
+    },
+    {
+        "main_topic": "Moda",
+        "sub_topic": "Pasarelas famosas",
         "question_text": "",
         "right_answer": "",
         "wrong_answers": []

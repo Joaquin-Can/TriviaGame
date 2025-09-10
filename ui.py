@@ -64,21 +64,28 @@ scores = {"Team A": 0, "Team B": 0}
 current_team = "Team A"
 remaining_questions = list_of_questions.copy()
 
+# Clear any previous buttons in button_frame
+for widget in button_frame.winfo_children():
+    widget.destroy()
+
 answer_buttons = []
+
+# Create 4 buttons in 2x2 grid
 for i in range(4):
     btn = tk.Button(
         button_frame,
         text="",
         font=("Arial", 24),
-        height=5,
-        width=30,
         wraplength=(root.winfo_screenwidth() // 2) - 100,
-        justify="center"
+        justify="center",
+        height=5
     )
-    row = i // 2   # 0 or 1
-    col = i % 2    # 0 or 1
-    btn.grid(row=row, column=col, padx=40, pady=20, sticky="nsew")
+    row = i // 2  # 0 or 1
+    col = i % 2   # 0 or 1
+    btn.grid(row=row, column=col, sticky="nsew", padx=20, pady=20)
     answer_buttons.append(btn)
+
+# Make rows and columns expand equally
 for r in range(2):
     button_frame.grid_rowconfigure(r, weight=1)
 for c in range(2):
@@ -94,11 +101,14 @@ team_label.pack_forget()
 
 button_images = {}  # keep references to prevent garbage collection
 
-def load_button_image(path, size=(300, 150)):
-    if not os.path.exists(path):
+def load_button_image(path, target_width, target_height):
+    try:
+        img = Image.open(path)
+        img = img.resize((target_width, target_height), Image.LANCZOS)
+        return ImageTk.PhotoImage(img)
+    except Exception as e:
+        print(f"Error loading image {path}: {e}")
         return None
-    img = Image.open(path).resize(size, Image.LANCZOS)
-    return ImageTk.PhotoImage(img)
 
 def start_game():
     
@@ -180,8 +190,9 @@ def reset_buttons_and_show_topics():
     # Go back to topic selection
     show_topics()
 
+
 def show_topics():
-    topic_frame.pack(pady=20)
+    topic_frame.pack(pady=20, expand=True, fill="both")
     team_label.pack(pady=20)
     score_label.pack(pady=20)
     subtopic_frame.pack_forget()
@@ -191,91 +202,102 @@ def show_topics():
     # Clear previous buttons
     for widget in topic_frame.winfo_children():
         widget.destroy()
-    for widget in subtopic_frame.winfo_children():
-        widget.destroy()
 
-    # Get all topics that have at least one remaining question
     available_topics = sorted(set(q.main_topic for q in remaining_questions))
 
-    tk.Label(topic_frame, text=f"{current_team}, choose a topic:", font=("Arial", 24)).pack(pady=5)
+    tk.Label(topic_frame, text=f"{current_team}, choose a topic:", font=("Arial", 28)).grid(row=0, column=0, columnspan=3, pady=20)
 
-    for topic in available_topics:
-        image_path = f"images/{topic}.jpg"  # Example: images/Science.jpg
-        img = load_button_image(image_path)
+    screen_width = root.winfo_screenwidth()
+    screen_height = root.winfo_screenheight()
+    button_width = (screen_width - 120) // 3  # 3 per row
+    button_height = int(screen_height * 0.25)
+
+    for i, topic in enumerate(available_topics):
+        image_path = f"images/{topic}.jpg"
+        img = load_button_image(image_path, button_width, button_height)
         button_images[topic] = img  # keep reference
 
-        if img:
-            btn = tk.Button(
-                topic_frame,
-                text=topic,
-                font=("Arial", 22, "bold"),
-                image=img,
-                compound="center",  # text overlays image
-                width=300, height=150,
-                command=lambda t=topic: show_subtopics(t)
-            )
-        else:
-            btn = tk.Button(
-                topic_frame,
-                text=topic,
-                font=("Arial", 22, "bold"),
-                width=25, height=3,
-                command=lambda t=topic: show_subtopics(t)
-            )
-        btn.pack(pady=10)
+        btn = tk.Button(
+            topic_frame,
+            text=topic,
+            font=("Arial", 22, "bold"),
+            image=img,
+            compound="center",
+            command=lambda t=topic: show_subtopics(t)
+        )
+
+        row = i // 3 + 1
+        col = i % 3
+
+        # Center last row if only 2 buttons
+        if row == (len(available_topics) - 1) // 3 + 1 and len(available_topics) % 3 == 2 and i >= len(available_topics) - 2:
+            if col == 0:
+                col = 0
+            elif col == 1:
+                col = 2
+
+        btn.grid(row=row, column=col, padx=20, pady=20, sticky="nsew")
+
+    for c in range(3):
+        topic_frame.grid_columnconfigure(c, weight=1)
 
 
 def show_subtopics(chosen_topic):
     topic_frame.pack_forget()
-    subtopic_frame.pack(pady=20)
+    subtopic_frame.pack(pady=20, expand=True, fill="both")
 
     # Clear previous subtopic buttons
     for widget in subtopic_frame.winfo_children():
         widget.destroy()
 
-    # Get subtopics with remaining questions in this topic
     available_subtopics = sorted(set(
         q.sub_topic for q in remaining_questions if q.main_topic == chosen_topic
     ))
 
-    tk.Label(subtopic_frame, text=f"{current_team}, choose a subtopic:", font=("Arial", 24)).pack(pady=5)
+    tk.Label(subtopic_frame, text=f"{current_team}, choose a subtopic:", font=("Arial", 28)).grid(row=0, column=0, columnspan=2, pady=20)
 
-    for subtopic in available_subtopics:
-        image_path = f"images/{chosen_topic}_{subtopic}.jpg"  # Example: images/Science_Physics.jpg
-        img = load_button_image(image_path)
-        button_images[f"{chosen_topic}_{subtopic}"] = img  # keep reference
+    screen_width = root.winfo_screenwidth()
+    screen_height = root.winfo_screenheight()
+    button_width = (screen_width - 80) // 2  # 2 per row
+    button_height = int(screen_height * 0.25)
 
-        if img:
-            btn = tk.Button(
-                subtopic_frame,
-                text=subtopic,
-                font=("Arial", 22, "bold"),
-                image=img,
-                compound="center",
-                width=300, height=150,
-                command=lambda st=subtopic: start_question(chosen_topic, st)
-            )
+    for i, subtopic in enumerate(available_subtopics):
+        image_path = f"images/{chosen_topic}_{subtopic}.jpg"
+        img = load_button_image(image_path, button_width, button_height)
+        button_images[f"{chosen_topic}_{subtopic}"] = img
+
+        btn = tk.Button(
+            subtopic_frame,
+            text=subtopic,
+            font=("Arial", 22, "bold"),
+            image=img,
+            compound="center",
+            command=lambda st=subtopic: start_question(chosen_topic, st)
+        )
+
+        row = i // 2 + 1
+        col = i % 2
+
+        # Center last row if only 1 button
+        if row == (len(available_subtopics) - 1) // 2 + 1 and len(available_subtopics) % 2 == 1 and i == len(available_subtopics) - 1:
+            col = 0
+            btn.grid(row=row, column=col, columnspan=2, padx=20, pady=20, sticky="nsew")
         else:
-            btn = tk.Button(
-                subtopic_frame,
-                text=subtopic,
-                font=("Arial", 22, "bold"),
-                width=24, height=3,
-                command=lambda st=subtopic: start_question(chosen_topic, st)
-            )
-        btn.pack(pady=10)
+            btn.grid(row=row, column=col, padx=20, pady=20, sticky="nsew")
+
+    for c in range(2):
+        subtopic_frame.grid_columnconfigure(c, weight=1)
 
 def start_question(topic, subtopic):
+    # Hide other frames
+    topic_frame.pack_forget()
     subtopic_frame.pack_forget()
-    question_label.pack(pady=40, expand=True, fill="both")
-    button_frame.pack(pady=20)
-    # Clear topic/subtopic buttons
-    for widget in topic_frame.winfo_children():
-        widget.destroy()
-    for widget in subtopic_frame.winfo_children():
-        widget.destroy()
 
-    # Pick a random question in this topic/subtopic
+    # Show question and buttons
+    question_label.pack(pady=40, expand=True, fill="both")
+    button_frame.pack(pady=20, expand=True, fill="both")  # <-- important
+
+    # Pick a random question
     global current_question
     available_questions = [
         q for q in remaining_questions if q.main_topic == topic and q.sub_topic == subtopic
@@ -290,11 +312,18 @@ def start_question(topic, subtopic):
     # Display question text
     question_label.config(text=current_question.question_text)
 
-    # Shuffle options and assign to buttons
+    # Shuffle options
     options = current_question.get_options()
-    for i, btn in enumerate(answer_buttons):
-        btn.config(text=options[i], command=lambda opt=options[i]: check_answer(opt))
 
+    # Assign options to buttons
+    for i, btn in enumerate(answer_buttons):
+        btn.config(
+            text=options[i],
+            command=lambda opt=options[i]: check_answer(opt),
+            bg="lightgray",  # reset button color
+            fg="black",
+            state="normal"
+        )
 
 
 root.mainloop()
