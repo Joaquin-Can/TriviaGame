@@ -25,6 +25,8 @@ tk.Label(menu_frame, text="Team B name:", font=("Arial", 24)).pack()
 team_b_entry = tk.Entry(menu_frame, font=("Arial", 14), width=20)
 team_b_entry.pack(pady=10)
 
+background_label = tk.Label(root)
+background_label.place(relx=0, rely=0, relwidth=1, relheight=1)
 
 question_label = tk.Label(
     root,
@@ -101,6 +103,25 @@ team_label.pack_forget()
 
 button_images = {}  # keep references to prevent garbage collection
 
+def reset_background():
+    background_label.config(image=menu_bg_img)
+    background_label.image = menu_bg_img
+
+def fade_in_button(btn, text, step=0, total_steps=5):
+    # Gradients for text and background (light → final)
+    text_shades = ["#e0e0e0", "#c0c0c0", "#808080", "#404040", "#000000"]
+    bg_shades   = ["#f0f0f0", "#e0e0e0", "#d0d0d0", "#b0b0b0", "lightgray"]
+
+    if step == 0:
+        btn.config(text=text)
+
+    if step < total_steps:
+        btn.config(
+            fg=text_shades[step],
+            bg=bg_shades[step]
+        )
+        root.after(100, lambda: fade_in_button(btn, text, step + 1, total_steps))
+
 def load_button_image(path, target_width, target_height):
     try:
         img = Image.open(path)
@@ -109,6 +130,19 @@ def load_button_image(path, target_width, target_height):
     except Exception as e:
         print(f"Error loading image {path}: {e}")
         return None
+
+menu_bg_img = load_button_image("images/menu_bg.jpg", root.winfo_screenwidth(), root.winfo_screenheight())
+
+def show_menu():
+    menu_frame.pack(expand=True)
+    topic_frame.pack_forget()
+    subtopic_frame.pack_forget()
+    question_label.pack_forget()
+    button_frame.pack_forget()
+
+    background_label.config(image=menu_bg_img)
+    background_label.image = menu_bg_img
+    background_label.lower()
 
 def start_game():
     
@@ -125,6 +159,8 @@ def start_game():
 
     # Hide menu, show game
     menu_frame.pack_forget()
+    background_label.config(image="")  # clear image
+    background_label.lower()  # make sure it doesn't block anything
     show_topics()
 
 start_button = tk.Button(menu_frame, text="Start Game", font=("Arial", 28), width=15, height=2, command=start_game)
@@ -190,8 +226,8 @@ def reset_buttons_and_show_topics():
     # Go back to topic selection
     show_topics()
 
-
 def show_topics():
+    topic_frame.config(bg="#800080")  # purple background
     topic_frame.pack(pady=20, expand=True, fill="both")
     team_label.pack(pady=20)
     score_label.pack(pady=20)
@@ -205,11 +241,12 @@ def show_topics():
 
     available_topics = sorted(set(q.main_topic for q in remaining_questions))
 
-    tk.Label(topic_frame, text=f"{current_team}, choose a topic:", font=("Arial", 28)).grid(row=0, column=0, columnspan=3, pady=20)
+    label = tk.Label(topic_frame, text=f"{current_team}, choose a topic:", font=("Arial", 28), bg="#800080", fg="white")
+    label.grid(row=0, column=0, columnspan=3, pady=20)
 
     screen_width = root.winfo_screenwidth()
     screen_height = root.winfo_screenheight()
-    button_width = (screen_width - 120) // 3  # 3 per row
+    button_width = (screen_width - 120) // 3
     button_height = int(screen_height * 0.25)
 
     for i, topic in enumerate(available_topics):
@@ -223,30 +260,27 @@ def show_topics():
             font=("Arial", 22, "bold"),
             image=img,
             compound="center",
+            fg="white",
+            bg="#800080",           # purple fallback
+            activebackground="#6a0dad",
+            bd=0,
+            highlightthickness=0,
             command=lambda t=topic: show_subtopics(t)
         )
 
         row = i // 3 + 1
         col = i % 3
-
-        # Center last row if only 2 buttons
-        if row == (len(available_topics) - 1) // 3 + 1 and len(available_topics) % 3 == 2 and i >= len(available_topics) - 2:
-            if col == 0:
-                col = 0
-            elif col == 1:
-                col = 2
-
         btn.grid(row=row, column=col, padx=20, pady=20, sticky="nsew")
 
     for c in range(3):
         topic_frame.grid_columnconfigure(c, weight=1)
 
-
 def show_subtopics(chosen_topic):
+    subtopic_frame.config(bg="#800080")  # purple background
     topic_frame.pack_forget()
     subtopic_frame.pack(pady=20, expand=True, fill="both")
 
-    # Clear previous subtopic buttons
+    # Clear previous buttons
     for widget in subtopic_frame.winfo_children():
         widget.destroy()
 
@@ -254,11 +288,12 @@ def show_subtopics(chosen_topic):
         q.sub_topic for q in remaining_questions if q.main_topic == chosen_topic
     ))
 
-    tk.Label(subtopic_frame, text=f"{current_team}, choose a subtopic:", font=("Arial", 28)).grid(row=0, column=0, columnspan=2, pady=20)
+    label = tk.Label(subtopic_frame, text=f"{current_team}, choose a subtopic:", font=("Arial", 28), bg="#800080", fg="white")
+    label.grid(row=0, column=0, columnspan=2, pady=20)
 
     screen_width = root.winfo_screenwidth()
     screen_height = root.winfo_screenheight()
-    button_width = (screen_width - 80) // 2  # 2 per row
+    button_width = (screen_width - 80) // 2
     button_height = int(screen_height * 0.25)
 
     for i, subtopic in enumerate(available_subtopics):
@@ -272,13 +307,17 @@ def show_subtopics(chosen_topic):
             font=("Arial", 22, "bold"),
             image=img,
             compound="center",
+            fg="white",
+            bg="#800080",           # purple fallback
+            activebackground="#6a0dad",
+            bd=0,
+            highlightthickness=0,
             command=lambda st=subtopic: start_question(chosen_topic, st)
         )
 
         row = i // 2 + 1
         col = i % 2
-
-        # Center last row if only 1 button
+        # Center last row if odd
         if row == (len(available_subtopics) - 1) // 2 + 1 and len(available_subtopics) % 2 == 1 and i == len(available_subtopics) - 1:
             col = 0
             btn.grid(row=row, column=col, columnspan=2, padx=20, pady=20, sticky="nsew")
@@ -289,16 +328,14 @@ def show_subtopics(chosen_topic):
         subtopic_frame.grid_columnconfigure(c, weight=1)
 
 def start_question(topic, subtopic):
+    global current_question, current_options
+
     # Hide other frames
     topic_frame.pack_forget()
     subtopic_frame.pack_forget()
-
-    # Show question and buttons
-    question_label.pack(pady=40, expand=True, fill="both")
-    button_frame.pack(pady=20, expand=True, fill="both")  # <-- important
+    button_frame.pack_forget()
 
     # Pick a random question
-    global current_question
     available_questions = [
         q for q in remaining_questions if q.main_topic == topic and q.sub_topic == subtopic
     ]
@@ -308,22 +345,69 @@ def start_question(topic, subtopic):
         return
 
     current_question = random.choice(available_questions)
+    current_options = current_question.get_options()  # store shuffled options once
 
-    # Display question text
+    # --- Set background image ---
+    screen_width = root.winfo_screenwidth()
+    screen_height = root.winfo_screenheight()
+    image_path = f"images/{topic}_{subtopic}.jpg"
+
+    img = load_button_image(image_path, screen_width, screen_height)
+    if img:
+        background_label.config(image=img)
+        background_label.image = img  # prevent GC
+        background_label.place(relx=0, rely=0, relwidth=1, relheight=1)
+        background_label.lower()  # keep it behind everything else
+
+    # Show only the question
     question_label.config(text=current_question.question_text)
+    question_label.pack(pady=40, expand=True, fill="both")
 
-    # Shuffle options
-    options = current_question.get_options()
+    # Reset answer buttons (hidden until reveal)
+    for btn in answer_buttons:
+        btn.config(text="", state="disabled")
 
-    # Assign options to buttons
+    # Show "Show Answers" button
+    show_answers_button.pack(pady=20)
+    show_answers_button.config(state="normal")
+
+    # --- Make sure foreground widgets are on top ---
+    question_label.lift()
+    button_frame.lift()
+    show_answers_button.lift()
+    team_label.lift()
+    score_label.lift()
+
+
+def reveal_answers():
+    global current_options
+    show_answers_button.pack_forget()
+
+    # Shuffle options and save them globally
+    current_options = current_question.get_options()
+
+    button_frame.pack(pady=20, expand=True, fill="both")
+
     for i, btn in enumerate(answer_buttons):
         btn.config(
-            text=options[i],
-            command=lambda opt=options[i]: check_answer(opt),
-            bg="lightgray",  # reset button color
-            fg="black",
+            text="",  # clear until fade starts
+            command=lambda opt=current_options[i]: check_answer(opt),
+            fg="lightgray",
+            bg="#f0f0f0",  # start pale
             state="normal"
         )
+        # Stagger each fade-in with 2 seconds delay between
+        root.after(i * 2000, lambda b=btn, txt=current_options[i]: fade_in_button(b, txt))
 
+show_answers_button = tk.Button(
+    root,
+    text="Show Answers",
+    font=("Arial", 24),
+    width=20,
+    height=2
+)
+show_answers_button.config(command=reveal_answers)
+show_answers_button.pack_forget()
 
+show_menu()
 root.mainloop()

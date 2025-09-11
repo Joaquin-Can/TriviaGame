@@ -10,7 +10,7 @@
         "sub_topic": "Física y Matemáticas",
         "question_text": "¿Cuál de las siguientes expresiones matemáticas, representa una parábola en el plano cartesiano?",
         "right_answer": "y = x²",
-        "wrong_answers": ["y = x", "y = x³", "y = x⁴"]
+        "wrong_answers": ["y = x", "y = x³", "y = log x"]
     },
     {   "main_topic": "Ciencia",
         "sub_topic": "Astronomia",
