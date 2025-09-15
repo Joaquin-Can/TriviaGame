@@ -11,18 +11,18 @@ root.title("Trivia Game")
 root.attributes("-fullscreen", True)
 root.bind("<Escape>", lambda e: root.attributes("-fullscreen", False))
 
-menu_frame = tk.Frame(root)
+menu_frame = tk.Frame(root, bg="blue")
 menu_frame.pack(expand=True)
 
-title_label = tk.Label(menu_frame, text="Trivia Los Canos", font=("Arial", 48, "bold"))
+title_label = tk.Label(menu_frame, text="Trivia Los Canos", font=("Arial", 60, "bold"), bg="blue", fg="white")
 title_label.pack(pady=20)
 
-tk.Label(menu_frame, text="Team A name:", font=("Arial", 24)).pack()
-team_a_entry = tk.Entry(menu_frame, font=("Arial", 14), width=20)
+tk.Label(menu_frame, text="Equipo A:", font=("Arial", 30)).pack()
+team_a_entry = tk.Entry(menu_frame, font=("Arial", 20), width=20, bg="white", fg="black")
 team_a_entry.pack(pady=10)
 
-tk.Label(menu_frame, text="Team B name:", font=("Arial", 24)).pack()
-team_b_entry = tk.Entry(menu_frame, font=("Arial", 14), width=20)
+tk.Label(menu_frame, text="Equipo B:", font=("Arial", 30)).pack()
+team_b_entry = tk.Entry(menu_frame, font=("Arial", 20), width=20, bg="white", fg="black")
 team_b_entry.pack(pady=10)
 
 background_label = tk.Label(root)
@@ -31,7 +31,7 @@ background_label.place(relx=0, rely=0, relwidth=1, relheight=1)
 question_label = tk.Label(
     root,
     text="",
-    font=("Arial", 36),
+    font=("Arial", 40),
     wraplength=root.winfo_screenwidth() - 400,  # fit most of the TV width
     justify="center",
     anchor="center"
@@ -94,11 +94,11 @@ for c in range(2):
     button_frame.grid_columnconfigure(c, weight=1)
     
 # Label for scores
-score_label = tk.Label(root, text=f"Team A: 0  |  Team B: 0", font=("Arial", 28))
+score_label = tk.Label(root, text=f"Equipo A: 0  |  Equipo B: 0", font=("Arial", 30))
 score_label.pack_forget()
 
 # Label for current team
-team_label = tk.Label(root, text=f"Current team: {current_team}", font=("Arial", 28))
+team_label = tk.Label(root, text=f"Equipo en juego: {current_team}", font=("Arial", 30))
 team_label.pack_forget()
 
 button_images = {}  # keep references to prevent garbage collection
@@ -155,7 +155,7 @@ def start_game():
 
     # Update labels
     score_label.config(text=f"{team_a_name}: 0  |  {team_b_name}: 0")
-    team_label.config(text=f"Current team: {current_team}")
+    team_label.config(text=f"Equipo en juego: {current_team}")
 
     # Hide menu, show game
     menu_frame.pack_forget()
@@ -347,17 +347,10 @@ def start_question(topic, subtopic):
     current_question = random.choice(available_questions)
     current_options = current_question.get_options()  # store shuffled options once
 
-    # --- Set background image ---
-    screen_width = root.winfo_screenwidth()
-    screen_height = root.winfo_screenheight()
-    image_path = f"images/{topic}_{subtopic}.jpg"
-
-    img = load_button_image(image_path, screen_width, screen_height)
-    if img:
-        background_label.config(image=img)
-        background_label.image = img  # prevent GC
-        background_label.place(relx=0, rely=0, relwidth=1, relheight=1)
-        background_label.lower()  # keep it behind everything else
+    # --- Set solid background ---
+    background_label.config(image="")      # remove any image
+    root.config(bg="blue")                 # main window bg
+    question_label.config(bg="blue", fg="white")  # readable text
 
     # Show only the question
     question_label.config(text=current_question.question_text)
@@ -390,10 +383,10 @@ def reveal_answers():
 
     for i, btn in enumerate(answer_buttons):
         btn.config(
-            text="",  # clear until fade starts
+            text="",
             command=lambda opt=current_options[i]: check_answer(opt),
-            fg="lightgray",
-            bg="#f0f0f0",  # start pale
+            fg="white",
+            bg="blue",
             state="normal"
         )
         # Stagger each fade-in with 2 seconds delay between

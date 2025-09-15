@@ -12,11 +12,60 @@
         "right_answer": "y = x²",
         "wrong_answers": ["y = x", "y = x³", "y = log x"]
     },
+    {
+        "main_topic": "Ciencia",
+        "sub_topic": "Física y Matemáticas",
+        "question_text": "¿Cuántos son los principios de la termodinámica?",
+        "right_answer": "4",
+        "wrong_answers": ["2", "3", "5"]
+    },
+    {
+        "main_topic": "Ciencia",
+        "sub_topic": "Física y Matemáticas",
+        "question_text": "¿Cuál de éstos conceptos matemáticos se utiliza para medir el área debajo de una curva?",
+        "right_answer": "La integral",
+        "wrong_answers": ["La derivada", "El límitie", "El logaritmo"]
+    },
+    {
+        "main_topic": "Ciencia",
+        "sub_topic": "Física y Matemáticas",
+        "question_text": "¿Cuál es la aceleración de la gravedad en la tierra?",
+        "right_answer": "9,8 m/s²",
+        "wrong_answers": ["8,9 m/s²", "7,8 m/s²", "8,7 m/s²"]
+    },
     {   "main_topic": "Ciencia",
         "sub_topic": "Astronomia",
         "question_text": "¿Cuál es el planeta más grande en la vía láctea?",
         "right_answer": "Júpiter",
         "wrong_answers": ["Neptuno", "Urano", "Saturno"]
+
+    },
+    {   "main_topic": "Ciencia",
+        "sub_topic": "Astronomia",
+        "question_text": "¿Cuánto tarda la luz en viajar desde el sol hasta la tierra?",
+        "right_answer": "Aproximadamente 8 minutos",
+        "wrong_answers": ["Aproximadamente 12 mintuos", "Aproximadamente 24 minutos", "Aproximadamente 6 minutos"]
+
+    },
+    {   "main_topic": "Ciencia",
+        "sub_topic": "Astronomia",
+        "question_text": "¿Cuál de los siguientes nombres pertenece a uno de los dos satélites de Marte?",
+        "right_answer": "Fobos",
+        "wrong_answers": ["Titán", "Dione", "Rea"]
+
+    },
+    {   "main_topic": "Ciencia",
+        "sub_topic": "Astronomia",
+        "question_text": "¿Bajo que término se categoriza a Pluto actualmente?",
+        "right_answer": "Planeta enano",
+        "wrong_answers": ["Satélite", "Cometa", "Cuerpo celeste sin categoria"]
+
+    },
+    {   "main_topic": "Ciencia",
+        "sub_topic": "Astronomia",
+        "question_text": "¿Cuál es el planeta más cercano al sol?",
+        "right_answer": "Mercurio",
+        "wrong_answers": ["Venus", "Tierra", "Marte"]
 
     },
     {
@@ -28,6 +77,34 @@
     },
     {
         "main_topic": "Ciencia",
+        "sub_topic": "Biología",
+        "question_text": "¿Cuál de los siguientes animales es ovíparo?",
+        "right_answer": "Tortuga",
+        "wrong_answers": ["Oso", "Escorpión", "Boa"]
+    },
+    {
+        "main_topic": "Ciencia",
+        "sub_topic": "Biología",
+        "question_text": "¿Cuál es la serpiente que se considera la más venenosa del mundo?",
+        "right_answer": "Taipán del interior",
+        "wrong_answers": ["Marrón oriental", "Cobra filipina", "Krait rayado"]
+    },
+    {
+        "main_topic": "Ciencia",
+        "sub_topic": "Biología",
+        "question_text": "¿Qué país habita el dragon de komodo?",
+        "right_answer": "Indonesia",
+        "wrong_answers": ["La India", "Nepal", "Tailandia"]
+    },
+    {
+        "main_topic": "Ciencia",
+        "sub_topic": "Biología",
+        "question_text": "¿Cúal de estos animales es omnívoro?",
+        "right_answer": "Rata",
+        "wrong_answers": ["Vaca", "Delfín", "Águila"]
+    },
+    {
+        "main_topic": "Ciencia",
         "sub_topic": "Química",
         "question_text": "¿Cuál de los siguientes elementos periódicos no es considerado un gas noble?",
         "right_answer": "Oxígeno",
@@ -35,10 +112,66 @@
     },
     {
         "main_topic": "Ciencia",
+        "sub_topic": "Química",
+        "question_text": "¿Cuál de las siguientes siglas representa Dióxido de carbono?",
+        "right_answer": "CO₂",
+        "wrong_answers": ["O₂", "CO", "C₂"]
+    },
+    {
+        "main_topic": "Ciencia",
+        "sub_topic": "Química",
+        "question_text": "¿Cuál de estos acidos se encuentra en el vinagre?",
+        "right_answer": "Ácido acético",
+        "wrong_answers": ["Ácido fosfórico", "Ácido ascórbico", "Ácido cítrico"]
+    },
+    {
+        "main_topic": "Ciencia",
+        "sub_topic": "Química",
+        "question_text": "¿Qué tipo de cambio ocurre cuando el hielo se derrite?",
+        "right_answer": "Físico",
+        "wrong_answers": ["Químico", "Nuclear", "Orgánico"]
+    },
+    {
+        "main_topic": "Ciencia",
+        "sub_topic": "Química",
+        "question_text": "¿Cómo se llama el proceso de separación de líquidos basado en sus puntos de ebullición?",
+        "right_answer": "Destilación",
+        "wrong_answers": ["Filtración", "Decantación", "Sublimación"]
+    },
+    {
+        "main_topic": "Ciencia",
         "sub_topic": "Anatomía",
         "question_text": "¿Cuál es el hueso más largo del cuerpo humano?",
         "right_answer": "El fémur",
         "wrong_answers": ["La tibia", "El húmero", "El radio"]
+    },
+    {
+        "main_topic": "Ciencia",
+        "sub_topic": "Anatomía",
+        "question_text": "¿Cuántos huesos tiene el cuerpo humano adulto aproximadamente",
+        "right_answer": "206",
+        "wrong_answers": ["106", "306", "406"]
+    },
+    {
+        "main_topic": "Ciencia",
+        "sub_topic": "Anatomía",
+        "question_text": "¿Cuál es la función principal de los glóbulos rojos?",
+        "right_answer": "Transportar oxígeno",
+        "wrong_answers": ["Regular la temperatura", "Defender el cuerpo de infecciones", "Producir hormonas"]
+    },
+    {
+        "main_topic": "Ciencia",
+        "sub_topic": "Anatomía",
+        "question_text": "¿Qué nombre recibe la capa externa de la piel?",
+        "right_answer": "Epidermis",
+        "wrong_answers": ["Hipodermis", "Endodermis", "Dermis"]
+    },
+    {
+        "main_topic": "Ciencia",
+        "sub_topic": "Anatomía",
+        "question_text": "¿Dónde se produce principalmente la insulina en el cuerpo humano?",
+        "right_answer": "Páncreas",
+        "wrong_answers": ["Hígado", "Riñones", "Intestino delgado"]
     },
     {
         "main_topic": "Geografía",
@@ -50,6 +183,38 @@
     },
     {
         "main_topic": "Geografía",
+        "sub_topic": "Biomas",
+        "question_text": "¿Cuál es el bioma más extenso del planeta?",
+        "right_answer": "La taiga",
+        "wrong_answers": ["Sabana", "Selva tropical", "Océano"]
+
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Biomas",
+        "question_text": "¿Qué bioma cubre la mayor parte de América del Sur?",
+        "right_answer": "Selva tropical",
+        "wrong_answers": ["Tundra", "Taiga", "Sabana"]
+
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Biomas",
+        "question_text": "¿En qué bioma viven principalmente los leones?",
+        "right_answer": "Sabana",
+        "wrong_answers": ["Bosque templado", "Desierto", "Selva tropical"]
+
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Biomas",
+        "question_text": "¿Qué bioma se caracteriza por estaciones muy marcadas y suelos fértiles ideales para la agricultura?",
+        "right_answer": "Pradera",
+        "wrong_answers": ["Bosque templado", "Sabana", "Desierto"]
+
+    },
+    {
+        "main_topic": "Geografía",
         "sub_topic": "Localización",
         "question_text": "¿En que continente se encuentran las cataratas del Niágara?",
         "right_answer": "En el continenete Americano",
@@ -57,10 +222,66 @@
     },
     {
         "main_topic": "Geografía",
+        "sub_topic": "Localización",
+        "question_text": "¿En que páis se encuentra el Taj Mahal?",
+        "right_answer": "India",
+        "wrong_answers": ["Pakistán", "China", "Irán"]
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Localización",
+        "question_text": "¿En que continente se encuentra Egipto?",
+        "right_answer": "En el continenete Americano",
+        "wrong_answers": ["En el continenete Africano", "En el continenete Asiático", "En el continenete Europeo"]
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Localización",
+        "question_text": "¿En que provincia se encuentra el cerro San Bernardo?",
+        "right_answer": "Salta",
+        "wrong_answers": ["Jujuy", "Tucumán", "Catamarca"]
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Localización",
+        "question_text": "¿En que pais Europeo se encuentra la ciudad de Lucerna?",
+        "right_answer": "Suiza",
+        "wrong_answers": ["Alemania", "Italia", "Francia"]
+    },
+    {
+        "main_topic": "Geografía",
         "sub_topic": "Climatología",
         "question_text": "¿Cuál de los siguientes elementos no es necesario para la formación de un tornado?",
         "right_answer": "Alta actividad eléctrica",
         "wrong_answers": ["Aire cálido y humedo cerca del suelo", "Aire frío y seco en altura", "Cambio de velocidad del viento con altura"]
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Climatología",
+        "question_text": "¿Cuál es el fenómeno atmosférico caracterizado por fuertes vientos en espiral que se forman sobre el mar?",
+        "right_answer": "Huracán",
+        "wrong_answers": ["Tornado", "Monzón", "Tsunami"]
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Climatología",
+        "question_text": "¿Cómo se llama el fenómeno climático caracterizado por el calentamiento anómalo del océano Pacífico?",
+        "right_answer": "El niño",
+        "wrong_answers": ["La niña", "Calentamiento de Fohl", "Aclimatización oceánica"]
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Climatología",
+        "question_text": "¿Qué instrumento mide la presión atmosférica?",
+        "right_answer": "Barómetro",
+        "wrong_answers": ["Termómetro", "Pluviómetro", "Anemómetro"]
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Climatología",
+        "question_text": "¿Cómo se llama la línea imaginaria que une puntos con la misma presión atmosférica en un mapa?",
+        "right_answer": "Isobaras",
+        "wrong_answers": ["Isoyetas", "Isotermas", "Isohalinas"]
     },
     {
         "main_topic": "Geografía",
@@ -75,6 +296,27 @@
         "question_text": "¿Cuál es la capital de Indonesia?",
         "right_answer": "Yakarta",
         "wrong_answers": ["Bangkok", "Baku", "Nueva Delhi"]
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Capitales",
+        "question_text": "¿Cuál es la capital de Canadá?",
+        "right_answer": "Ottawa",
+        "wrong_answers": ["Ontario", "Vancouver", "Toronto"]
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Capitales",
+        "question_text": "¿Cuál es la capital de Bielorrusia?",
+        "right_answer": "Minsk",
+        "wrong_answers": ["Kiev", "Praga", "Moscú"]
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Capitales",
+        "question_text": "¿Cuál es la capital de Irak?",
+        "right_answer": "Bagdad",
+        "wrong_answers": ["Teherán", "Abu dabi", "Bagdul"]
     },
     {
         "main_topic": "Geografía",
@@ -260,36 +502,36 @@
         "wrong_answers": []
     },
     {
-        "main_topic": "Moda",
-        "sub_topic": "Ropa",
+        "main_topic": "Variado",
+        "sub_topic": "Moda",
         "question_text": "",
         "right_answer": "",
         "wrong_answers": []
     },
     {
-        "main_topic": "Moda",
-        "sub_topic": "Diseñadores",
+        "main_topic": "Variado",
+        "sub_topic": "Videojuegos",
         "question_text": "",
         "right_answer": "",
         "wrong_answers": []
     },
     {
-        "main_topic": "Moda",
-        "sub_topic": "Marcas",
+        "main_topic": "Variado",
+        "sub_topic": "Dichos",
         "question_text": "",
         "right_answer": "",
         "wrong_answers": []
     },
     {
-        "main_topic": "Moda",
-        "sub_topic": "Supermodelos",
+        "main_topic": "Variado",
+        "sub_topic": "Tecnología",
         "question_text": "",
         "right_answer": "",
         "wrong_answers": []
     },
     {
-        "main_topic": "Moda",
-        "sub_topic": "Pasarelas famosas",
+        "main_topic": "Variado",
+        "sub_topic": "Asesinos Seriales",
         "question_text": "",
         "right_answer": "",
         "wrong_answers": []
