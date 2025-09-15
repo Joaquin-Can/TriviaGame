@@ -24,7 +24,7 @@
         "sub_topic": "Física y Matemáticas",
         "question_text": "¿Cuál de éstos conceptos matemáticos se utiliza para medir el área debajo de una curva?",
         "right_answer": "La integral",
-        "wrong_answers": ["La derivada", "El límitie", "El logaritmo"]
+        "wrong_answers": ["La derivada", "El límite", "El logaritmo"]
     },
     {
         "main_topic": "Ciencia",
@@ -327,23 +327,83 @@
 
     },
     {
+        "main_topic": "Geografía",
+        "sub_topic": "Población",
+        "question_text": "¿Qué se entiende por “densidad de población”?",
+        "right_answer": "Número de habitantes por kilómetro cuadrado",
+        "wrong_answers": ["Número de habitantes en una ciudad", "Número de nacimientos al año", "Número de migraciones por año"]
+
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Población",
+        "question_text": "¿Qué científico desarrolló la teoría de que la población crece más rápido que los recursos?",
+        "right_answer": "Thomas Malthus",
+        "wrong_answers": ["Darwin", "Max Weber", "Adam Smith"]
+
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Población",
+        "question_text": "¿Qué es la “transición demográfica”?",
+        "right_answer": "El paso de altas tasas de natalidad y mortalidad a tasas bajas",
+        "wrong_answers": ["El cambio de una población rural a urbana", "El aumento de migración hacia países desarrollados", "El crecimiento acelerado de la población mundial"]
+
+    },
+    {
+        "main_topic": "Geografía",
+        "sub_topic": "Población",
+        "question_text": "¿qué modelo de crecimiento poblacional describe un crecimiento rápido al inicio y luego una estabilización?",
+        "right_answer": "Crecimiento logístico",
+        "wrong_answers": ["Crecimiento cíclico", "Crecimiento lineal", "Crecimiento exponencial"]
+
+    },
+    {
         "main_topic": "Arte y Literatura",
         "sub_topic": "Pinturas",
-        "question_text": "¿En que museo se encuentra actualmente el retrato original de la Mona Lisa?",
-        "right_answer": "En el museo de Louvre, en Paris",
-        "wrong_answers": ["En el museo Británico, en Londres", "En el museo de arte metropolitano, en Nueva York", "En el museo del Vaticano, en la ciudad del Vaticano"]
+        "question_text": "¿Quién pintó la Mona Lisa?",
+        "right_answer": "Leonardo da Vinci",
+        "wrong_answers": ["Vincent van Gogh", "Pablo Picasso", "Miguel Ángel"]
+    },
+    {
+        "main_topic": "Arte y Literatura",
+        "sub_topic": "Pinturas",
+        "question_text": "Qué pintor renacentista fue también arquitecto y murió joven a los 37 años",
+        "right_answer": "Rafael Sanzio",
+        "wrong_answers": ["Giotto di Bondone", "Tiziano Vecellio", "Sandro Botticelli"]
+    },
+    {
+        "main_topic": "Arte y Literatura",
+        "sub_topic": "Pinturas",
+        "question_text": "¿Cuál es la técnica utilizada en la pintura mural de la Capilla Sixtina?",
+        "right_answer": "Fresco",
+        "wrong_answers": ["Gouache", "Óleo", "Acrílico"]
+    },
+    {
+        "main_topic": "Arte y Literatura",
+        "sub_topic": "Pinturas",
+        "question_text": "¿Qué pintor barroco usó el claroscuro de manera muy dramática en sus obras?",
+        "right_answer": "Caravaggio",
+        "wrong_answers": ["Rembrandt", "Rubens", "Velázquez"]
+    },
+    {
+        "main_topic": "Arte y Literatura",
+        "sub_topic": "Pinturas",
+        "question_text": "¿Qué técnica pictórica consiste en aplicar pigmento diluido en agua sobre papel?",
+        "right_answer": "Acuarela",
+        "wrong_answers": ["Óleo", "Fresco", "Témpera"]
     },
     {
         "main_topic": "Arte y Literatura",
         "sub_topic": "Esculturas",
-        "question_text": "",
+        "question_text": "¿?",
         "right_answer": "",
         "wrong_answers": []
     },
     {
         "main_topic":"Arte y Literatura",
         "sub_topic": "Lenguaje",
-        "question_text": "",
+        "question_text": "¿?",
         "right_answer": "",
         "wrong_answers": []
     },
