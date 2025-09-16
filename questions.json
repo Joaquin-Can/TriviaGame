@@ -396,44 +396,212 @@
     {
         "main_topic": "Arte y Literatura",
         "sub_topic": "Esculturas",
-        "question_text": "¿?",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿Quién esculpió el David en mármol?",
+        "right_answer": "Miguel Ángel",
+        "wrong_answers": ["Donatello", "Bernini", "Cellini"]
+    },
+    {
+        "main_topic": "Arte y Literatura",
+        "sub_topic": "Esculturas",
+        "question_text": "¿Quién es el autor de El Pensador?",
+        "right_answer": "Auguste Rodin",
+        "wrong_answers": ["Miguel Ángel", "Bernini", "Canova"]
+    },
+    {
+        "main_topic": "Arte y Literatura",
+        "sub_topic": "Esculturas",
+        "question_text": "¿En qué isla se encuentran los famosos Moáis?",
+        "right_answer": "Isla de Pascua",
+        "wrong_answers": ["Isla Sicilia", "Isla Creta", "Isla Cerdeña"]
+    },
+    {
+        "main_topic": "Arte y Literatura",
+        "sub_topic": "Esculturas",
+        "question_text": "¿Cómo se llama la escultura griega que representa a un atleta lanzando un disco?",
+        "right_answer": "Discóbolo",
+        "wrong_answers": ["Doríforo", "Apoxiomeno", "Hermes de Praxíteles"]
+    },
+    {
+        "main_topic": "Arte y Literatura",
+        "sub_topic": "Esculturas",
+        "question_text": "¿Cómo se llama la escultura ecuestre de bronce ubicada en la Plaza del Capitolio en Roma?",
+        "right_answer": "Marco Aurelio",
+        "wrong_answers": ["Julio César", "Constantino", "Trajano"]
     },
     {
         "main_topic":"Arte y Literatura",
         "sub_topic": "Lenguaje",
-        "question_text": "¿?",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿Cuál de estas palabras es un ejemplo de hiato?",
+        "right_answer": "Creer",
+        "wrong_answers": ["Aire", "Puerta", "Miedo"]
+    },
+    {
+        "main_topic":"Arte y Literatura",
+        "sub_topic": "Lenguaje",
+        "question_text": "¿Que función cumple la palabra 'rápido' en en la oración: 'Los ciervos escapan rápido del lugar'?",
+        "right_answer": "Adverbio",
+        "wrong_answers": ["Verbo", "Objeto indirecto", "Objeto directo"]
+    },
+    {
+        "main_topic":"Arte y Literatura",
+        "sub_topic": "Lenguaje",
+        "question_text": "¿En tiempo del modo indicativo está conjugado el verbo estar en la siguiente oración: 'María ha estado tejiendo desde hace 5 horas'?",
+        "right_answer": "Pretérito perfecto compuesto",
+        "wrong_answers": ["Préterico pluscuamperfecto", "Pretérito anterior", "Pretérito perfecto simple"]
+    },
+    {
+        "main_topic":"Arte y Literatura",
+        "sub_topic": "Lenguaje",
+        "question_text": "¿Cómo se llama la unidad más pequeña de sonido en el lenguaje?",
+        "right_answer": "Fonema",
+        "wrong_answers": ["Morfema", "Símbolo", "Sílaba"]
+    },
+    {
+        "main_topic":"Arte y Literatura",
+        "sub_topic": "Lenguaje",
+        "question_text": "¿Qué rama de la lingüística estudia el significado de las palabras?",
+        "right_answer": "Semántica",
+        "wrong_answers": ["Sintaxis", "Fonología", "Morfología"]
     },
     {
         "main_topic":"Arte y Literatura",
         "sub_topic": "Libros",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿Quién escribió Don Quijote de la Mancha?",
+        "right_answer": "Miguel de Cervantes",
+        "wrong_answers": ["Lope de Vega", "Garcilaso de la Vega", "Calderón de la Barca"]
+    },
+    {
+        "main_topic":"Arte y Literatura",
+        "sub_topic": "Libros",
+        "question_text": "¿Quién escribió Cien años de soledad?",
+        "right_answer": "Gabriel García Márquez",
+        "wrong_answers": ["Pablo Neruda", "Julio Cortázar", "Mario Vargas Llosa"]
+    },
+    {
+        "main_topic":"Arte y Literatura",
+        "sub_topic": "Libros",
+        "question_text": "¿Qué tipo de obra es Hamlet de William Shakespeare?",
+        "right_answer": "Tragedia",
+        "wrong_answers": ["Comedia", "Ensayo", "Novela"]
+    },
+    {
+        "main_topic":"Arte y Literatura",
+        "sub_topic": "Libros",
+        "question_text": "¿Cómo se llama la saga literaria escrita por J.R.R. Tolkien?",
+        "right_answer": "El Señor de los Anillos",
+        "wrong_answers": ["Canción de hielo y fuego", "La materia oscura", "Crónicas de Narnia"]
+    },
+    {
+        "main_topic":"Arte y Literatura",
+        "sub_topic": "Libros",
+        "question_text": "¿Quién es el autor de El Principito?",
+        "right_answer": "Antoine de Saint-Exupéry",
+        "wrong_answers": ["Hans Christian Andersen", "Lewis Carroll", "Charles Perrault"]
     },
     {
         "main_topic": "Arte y Literatura",
         "sub_topic": "Arquitectura",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿Qué arquitecto español diseñó la Sagrada Familia en Barcelona?",
+        "right_answer": "Antoni Gaudí",
+        "wrong_answers": ["Santiago Calatrava", "Rafael Moneo", "Le Corbusier"]
+    },
+    {
+        "main_topic": "Arte y Literatura",
+        "sub_topic": "Arquitectura",
+        "question_text": "¿Qué estilo arquitectónico se caracteriza por arcos de medio punto y gruesos muros?",
+        "right_answer": "Románico",
+        "wrong_answers": ["Barroco", "Gótico", "Renacentista"]
+    },
+    {
+        "main_topic": "Arte y Literatura",
+        "sub_topic": "Arquitectura",
+        "question_text": "¿Qué estilo arquitectónico usaba arcos apuntados y vidrieras altas?",
+        "right_answer": "Gótico",
+        "wrong_answers": ["Renacentista", "Neoclásico", "Barroco"]
+    },
+    {
+        "main_topic": "Arte y Literatura",
+        "sub_topic": "Arquitectura",
+        "question_text": "¿Cuál es el rascacielos más alto del mundo (2025)?",
+        "right_answer": "Burj Khalifa",
+        "wrong_answers": ["Shanghai Tower", "One World Trade Center", "Petronas Towers"]
+    },
+    {
+        "main_topic": "Arte y Literatura",
+        "sub_topic": "Arquitectura",
+        "question_text": "¿Quién es considerado el “padre de la arquitectura moderna”?",
+        "right_answer": "Le Corbusier",
+        "wrong_answers": ["Mies van der Rohe", "Louis Sullivan", "I. M. Pei"]
     },
     {
         "main_topic": "Deportes",
         "sub_topic": "Reglas",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "En el boxeo profesional, ¿cuánto dura un round?",
+        "right_answer": "3 minutos",
+        "wrong_answers": ["1 minuto", "2 minutos", "5 minutos"]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Reglas",
+        "question_text": "En rugby, ¿cuántos puntos vale un try?",
+        "right_answer": "5",
+        "wrong_answers": ["3", "4", "6"]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Reglas",
+        "question_text": "En fútbol, ¿qué tipo de tiro libre se señala si el portero agarra el balón con las manos tras recibirlo de un pase de su compañero con el pie?",
+        "right_answer": "Tiro libre indirecto",
+        "wrong_answers": ["Penalti", "Tiro libre directo", "Saque de esquina"]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Reglas",
+        "question_text": "En fútbol, según la regla del fuera de juego, ¿qué parte del cuerpo se considera al determinar la posición adelantada?",
+        "right_answer": "Cualquier parte con la que se pueda marcar gol",
+        "wrong_answers": ["Todo el cuerpo", "Solo la cabeza", "Solo los pies"]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Reglas",
+        "question_text": "En tenis, ¿cómo se llama la situación en la que ambos jugadores tienen 40-40?",
+        "right_answer": "Deuce",
+        "wrong_answers": ["Break", "Tie-break", "Ace"]
     },
     {
         "main_topic": "Deportes",
         "sub_topic": "Mundiales de Fútbol",
-        "question_text": "",
+        "question_text": "¿?",
         "right_answer": "",
-        "wrong_answers": []
+        "wrong_answers": ["", "", ""]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Mundiales de Fútbol",
+        "question_text": "¿?",
+        "right_answer": "",
+        "wrong_answers": ["", "", ""]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Mundiales de Fútbol",
+        "question_text": "¿?",
+        "right_answer": "",
+        "wrong_answers": ["", "", ""]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Mundiales de Fútbol",
+        "question_text": "¿?",
+        "right_answer": "",
+        "wrong_answers": ["", "", ""]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Mundiales de Fútbol",
+        "question_text": "¿?",
+        "right_answer": "",
+        "wrong_answers": ["", "", ""]
     },
     {
         "main_topic": "Deportes",
