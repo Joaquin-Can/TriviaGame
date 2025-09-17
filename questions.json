@@ -935,44 +935,128 @@
     {
         "main_topic": "Creencias y Mitología",
         "sub_topic": "Cristianismo",
-        "question_text": "¿?",
-        "right_answer": "",
-        "wrong_answers": ["", "", ""]
+        "question_text": "¿Qué celebración cristiana conmemora la resurrección de Jesús?",
+        "right_answer": "Pascua",
+        "wrong_answers": ["Navidad", "Pentecostés", "Adviento"]
     },
     {
         "main_topic": "Creencias y Mitología",
         "sub_topic": "Cristianismo",
-        "question_text": "¿?",
-        "right_answer": "",
-        "wrong_answers": ["", "", ""]
+        "question_text": "Según el libro del apocalipsis, ¿cuáles de estos no es uno de los 4 jinetes del apocalipsis?",
+        "right_answer": "La desesperación",
+        "wrong_answers": ["El hambre", "La peste", "La muerte"]
     },
     {
         "main_topic": "Creencias y Mitología",
         "sub_topic": "Cristianismo",
-        "question_text": "¿?",
-        "right_answer": "",
-        "wrong_answers": ["", "", ""]
+        "question_text": "¿Qué apóstol escribió gran parte del Nuevo Testamento y fue convertido tras una visión en el camino a Damasco?",
+        "right_answer": "Pablo",
+        "wrong_answers": ["Pedro", "Juan", "Santiago"]
     },
     {
         "main_topic": "Creencias y Mitología",
         "sub_topic": "Hinduismo",
-        "question_text": "¿?",
-        "right_answer": "",
-        "wrong_answers": ["", "", ""]
+        "question_text": "¿Qué dios hindú es conocido como el destructor y transformador?",
+        "right_answer": "Shiva",
+        "wrong_answers": ["Brahma", "Vishnu", "Ganesha"]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Hinduismo",
+        "question_text": "¿Qué festividad hindú celebra el triunfo del bien sobre el mal y es conocida como “festival de las luces”?",
+        "right_answer": "Diwali",
+        "wrong_answers": ["Holi", "Navaratri", "Raksha Bandhan"]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Hinduismo",
+        "question_text": "¿Cuál es el texto sagrado hindú más conocido que contiene himnos y enseñanzas religiosas?",
+        "right_answer": "Vedas",
+        "wrong_answers": ["Ramayana", "Upanishads", "Bhagavad Gita"]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Hinduismo",
+        "question_text": "¿Cuál es el dios principal del hinduismo conocido como el creador del universo?",
+        "right_answer": "Brahma",
+        "wrong_answers": ["Vishnu", "Shiva", "Krishna"]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Hinduismo",
+        "question_text": "¿Qué dios hindú es representado con cabeza de elefante?",
+        "right_answer": "Ganesha",
+        "wrong_answers": ["Krishna", "Indra", "Hanuman"]
     },
     {
         "main_topic": "Creencias y Mitología",
         "sub_topic": "Egipcia",
-        "question_text": "¿?",
-        "right_answer": "",
-        "wrong_answers": ["", "", ""]
+        "question_text": "¿Quién es el dios egipcio del sol y creador del mundo según la mitología egipcia?",
+        "right_answer": "Ra",
+        "wrong_answers": ["Osiris", "Anubis", "Horus"]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Egipcia",
+        "question_text": "¿Qué dios egipcio es guardián de los muertos y guía de las almas en el inframundo?",
+        "right_answer": "Anubis",
+        "wrong_answers": ["Seth", "Horus", "Thot"]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Egipcia",
+        "question_text": "¿Qué dios egipcio del cielo y la guerra tiene cabeza de halcón y es protector del faraón?",
+        "right_answer": "Horus",
+        "wrong_answers": ["Seth", "Osiris", "Ra"]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Egipcia",
+        "question_text": "¿Qué faraón es famoso por la Gran Pirámide de Giza?",
+        "right_answer": "Keops",
+        "wrong_answers": ["Ramsés II", "Akhenatón", "Tutankamón"]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Egipcia",
+        "question_text": "¿Qué criatura mitológica custodiaba las tumbas y los templos en Egipto, a veces representada como un león alado?",
+        "right_answer": "Esfinje",
+        "wrong_answers": ["Cerbero", "Minotauro", "Quimera"]
     },
     {
         "main_topic": "Creencias y Mitología",
         "sub_topic": "Nórdica",
-        "question_text": "¿?",
-        "right_answer": "",
-        "wrong_answers": ["", "", ""]
+        "question_text": "¿Quién es el dios principal de la mitología nórdica, gobernante de Asgard?",
+        "right_answer": "Odin",
+        "wrong_answers": ["Loki", "Thor", "Frey"]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Nórdica",
+        "question_text": "¿Qué mundo es hogar de los humanos en la mitología nórdica?",
+        "right_answer": "Midgard",
+        "wrong_answers": ["Asgard", "Vanaheim", "Jotunheim"]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Nórdica",
+        "question_text": "¿Qué criatura gigante serpentina rodea el mundo y está destinada a luchar contra Thor en el Ragnarök?",
+        "right_answer": "Jormungandr",
+        "wrong_answers": ["Fenrir", "Hel", "Sleipnir"]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Nórdica",
+        "question_text": "¿Qué lobo gigante está destinado a devorar a Odin durante el Ragnarök?",
+        "right_answer": "Fenrir",
+        "wrong_answers": ["Garm", "Jormungandr", "Sleipnir"]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Nórdica",
+        "question_text": "¿Qué es el Bifröst en la mitología nórdica?",
+        "right_answer": "El puente entre Midgard y Asgard",
+        "wrong_answers": ["El reino de los gigantes", "El árbol del mundo", "El martillo de Thor"]
     },
     {
         "main_topic": "Historia",
@@ -1012,31 +1096,144 @@
     {
         "main_topic": "Variado",
         "sub_topic": "Moda",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿Qué diseñador es conocido por crear el “Little Black Dress” (pequeño vestido negro)?",
+        "right_answer": "Coco Chanel",
+        "wrong_answers": ["Christian Dior", "Karl Lagerfeld", "Yves Saint Laurent"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Moda",
+        "question_text": "¿Qué marca es famosa por sus bolsos, zapatos y accesorios de lujo con el logo “GG”?",
+        "right_answer": "Gucci",
+        "wrong_answers": ["Prada", "Versace", "Valentino"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Moda",
+        "question_text": "¿Qué diseñador estadounidense es conocido por sus trajes de estilo preppy y por popularizar el logo de un caballo con jinete?",
+        "right_answer": "Ralph Lauren",
+        "wrong_answers": ["Tommy Hilfiger", "Calvin Klein", "Michael Kors"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Moda",
+        "question_text": "¿Qué casa de moda francesa es famosa por sus bolsos “Birkin” y “Kelly”?",
+        "right_answer": "Hermès",
+        "wrong_answers": ["Chanel", "Dior", "Louis Vuitton"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Moda",
+        "question_text": "¿Qué tipo de moda consiste en ropa inspirada en décadas pasadas, reutilizando estilos antiguos?",
+        "right_answer": "Vintage",
+        "wrong_answers": ["Avant-garde", "Streetwear", "Minimalista"]
     },
     {
         "main_topic": "Variado",
         "sub_topic": "Videojuegos",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿Qué juego popular consiste en construir y explorar mundos hechos de bloques?",
+        "right_answer": "Minecraft",
+        "wrong_answers": ["Fortnite", "Roblox", "Among Us"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Videojuegos",
+        "question_text": "¿En qué juego aparece el arma “Master Sword”?",
+        "right_answer": "The Legend of Zelda",
+        "wrong_answers": ["Final Fantasy", "Dark Souls", "Skyrim"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Videojuegos",
+        "question_text": "¿Qué personaje es el protagonista de Half-Life?",
+        "right_answer": "Gordon Freeman",
+        "wrong_answers": ["Master Chief", "Lara Croft", "Marcus Fenix"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Videojuegos",
+        "question_text": "¿Qué videojuego fue el primero en incluir un modo “Battle Royale”?",
+        "right_answer": "PUBG",
+        "wrong_answers": ["Fortnite", "H1Z1", "Call of Duty: Warzone"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Videojuegos",
+        "question_text": "¿Qué compañía creó la consola PlayStation?",
+        "right_answer": "Sony",
+        "wrong_answers": ["Microsoft", "Nintendo", "Sega"]
     },
     {
         "main_topic": "Variado",
         "sub_topic": "Dichos",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "El vivo vive del zonzo y el zonzo vive...",
+        "right_answer": "...de su trabajo",
+        "wrong_answers": ["...de su pareja", "...de su fortuna", "...de su desdicha"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Dichos",
+        "question_text": "No hay mal que dure 100 años...",
+        "right_answer": "...ni cuerpo que lo resista",
+        "wrong_answers": ["...ni alma que se lo banque", "...ni persona que se lo permita", "...ni viejo que lo acredita"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Dichos",
+        "question_text": "Por donde fueres...",
+        "right_answer": "...haz lo que vieres",
+        "wrong_answers": ["...haz lo que sintieres", "...haz lo que quisieres", "...haz lo que te permitieres"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Dichos",
+        "question_text": "A la corta o a la larga...",
+        "right_answer": "...no hay matrero que no caiga",
+        "wrong_answers": ["...no hay ladrón que no caiga", "...no hay mentira que no caiga", "...no hay reino que no caiga"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Dichos",
+        "question_text": "A cada chancho le llega...",
+        "right_answer": "...su San Martín",
+        "wrong_answers": ["...su hora", "...su tiempo", "...su muerte"]
     },
     {
         "main_topic": "Variado",
         "sub_topic": "Tecnología",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿Quién es considerado el cofundador de Microsoft junto con Bill Gates?",
+        "right_answer": "Paul Allen",
+        "wrong_answers": ["Steve Jobs", "Mark Zuckerberg", "Elon Musk"]
     },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Tecnología",
+        "question_text": "¿Qué significa la sigla “CPU” en informática?",
+        "right_answer": "Central Processing Unit",
+        "wrong_answers": ["Computer Personal Unit", "Central Power Unit", "Control Powerful Unit"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Tecnología",
+        "question_text": "¿Quién es el creador de Facebook?",
+        "right_answer": "Mark Zuckerberg",
+        "wrong_answers": ["Jeff Bezos", "Bill Gates", "Elon Musk"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Tecnología",
+        "question_text": "¿Qué lenguaje de programación es conocido por ser muy utilizado en desarrollo web y tiene el símbolo “< >” como parte de su sintaxis?",
+        "right_answer": "HTML",
+        "wrong_answers": ["Python", "JavaScript", "C++"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Tecnología",
+        "question_text": "¿Qué tecnología permite que varios dispositivos se conecten y compartan datos a corta distancia sin cables?",
+        "right_answer": "Bluetooth",
+        "wrong_answers": ["Wi-Fi", "USB", "Ethernet"]
+    },
+
     {
         "main_topic": "Variado",
         "sub_topic": "Asesinos Seriales",
