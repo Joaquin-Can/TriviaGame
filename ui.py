@@ -215,15 +215,15 @@ def check_answer(selected_answer):
     root.after(1500, lambda: reset_buttons_and_show_topics())
 
 def reset_buttons_and_show_topics():
-    # Reset button colors and enable them
+    
     for btn in answer_buttons:
         btn.config(bg="gray90", fg="black", state="normal")
 
-    # Hide question label and button frame
+    
     question_label.pack_forget()
     button_frame.pack_forget()
 
-    # Go back to topic selection
+    
     show_topics()
 
 def show_topics():

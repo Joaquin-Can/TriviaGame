@@ -571,128 +571,408 @@
     {
         "main_topic": "Deportes",
         "sub_topic": "Mundiales de Fútbol",
-        "question_text": "¿?",
-        "right_answer": "",
-        "wrong_answers": ["", "", ""]
+        "question_text": "¿Qué país fue campeón en el primer Mundial de la FIFA en 1930?",
+        "right_answer": "Uruguay",
+        "wrong_answers": ["Argentina", "Italia", "Brasil"]
     },
     {
         "main_topic": "Deportes",
         "sub_topic": "Mundiales de Fútbol",
-        "question_text": "¿?",
-        "right_answer": "",
-        "wrong_answers": ["", "", ""]
+        "question_text": "¿En qué año se celebró el primer Mundial de Fútbol en África?",
+        "right_answer": "2010",
+        "wrong_answers": ["2006", "2014", "2018"]
     },
     {
         "main_topic": "Deportes",
         "sub_topic": "Mundiales de Fútbol",
-        "question_text": "¿?",
-        "right_answer": "",
-        "wrong_answers": ["", "", ""]
+        "question_text": "¿Qué selección jugó la final del Mundial de 1950 contra Uruguay en el famoso “Maracanazo”?",
+        "right_answer": "Brasil",
+        "wrong_answers": ["Argentina", "Alemania", "Inglaterra"]
     },
     {
         "main_topic": "Deportes",
         "sub_topic": "Mundiales de Fútbol",
-        "question_text": "¿?",
-        "right_answer": "",
-        "wrong_answers": ["", "", ""]
+        "question_text": "¿Cuál fue el primer país en ganar dos Mundiales consecutivos?",
+        "right_answer": "Italia",
+        "wrong_answers": ["Brasil", "Uruguay", "Alemania"]
     },
     {
         "main_topic": "Deportes",
         "sub_topic": "Mundiales de Fútbol",
-        "question_text": "¿?",
-        "right_answer": "",
-        "wrong_answers": ["", "", ""]
+        "question_text": "¿Quién fue el máximo goleador histórico de los Mundiales hasta Qatar 2022?",
+        "right_answer": "Miroslav Klose",
+        "wrong_answers": ["Ronaldo Nazário", "Lionel Messi", "Pelé"]
     },
     {
         "main_topic": "Deportes",
         "sub_topic": "Logros",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿Qué futbolista ha ganado más Copas del Mundo?",
+        "right_answer": "Pelé",
+        "wrong_answers": ["Lionel Messi", "Maradona", "Ronaldo Nazário"]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Logros",
+        "question_text": "¿Qué atleta ganó 8 medallas de oro en los Juegos Olímpicos de Pekín 2008?",
+        "right_answer": "Michael Phelps",
+        "wrong_answers": ["Usain Bolt", "Carl Lewis", "Mark Spitz"]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Logros",
+        "question_text": "¿Qué piloto de Fórmula 1 tiene más títulos mundiales junto con Michael Schumacher (7)?",
+        "right_answer": "Lewis Hamilton",
+        "wrong_answers": ["Ayrton Senna", "Alain Prost", "Sebastian Vettel"]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Logros",
+        "question_text": "¿Qué selección de rugby ganó la Copa del Mundo en 1987, primera edición del torneo?",
+        "right_answer": "Nueva Zelanda",
+        "wrong_answers": ["Inglaterra", "Sudáfrica", "Australia"]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Logros",
+        "question_text": "¿Qué jugadora de tenis ganó 24 títulos de Grand Slam, récord absoluto en la historia?",
+        "right_answer": "Margaret Court",
+        "wrong_answers": ["Serena Williams", "Martina Navratilova", "Steffi Graf"]
     },
     {
         "main_topic": "Deportes",
         "sub_topic": "Clubes de Fútbol",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿Qué club de fútbol ganó la primera Champions League en 1956?",
+        "right_answer": "Real Madrid",
+        "wrong_answers": ["AC Milan", "Benfica", "Barcelona"]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Clubes de Fútbol",
+        "question_text": "¿Qué club brasileño tiene como ídolo histórico a Pelé?",
+        "right_answer": "Santos",
+        "wrong_answers": ["Flamengo", "Corinthians", "São Paulo"]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Clubes de Fútbol",
+        "question_text": "¿Qué club europeo tiene más títulos de Champions League?",
+        "right_answer": "Real Madrid",
+        "wrong_answers": ["AC Milan", "Bayern Múnich", "Liverpool"]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Clubes de Fútbol",
+        "question_text": "¿Qué club portugués es conocido como “Los Dragones”?",
+        "right_answer": "Porto",
+        "wrong_answers": ["Benfica", "Sporting de Lisboa", "Braga"]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Clubes de Fútbol",
+        "question_text": "¿Qué club argentino es conocido como “El Rey de Copas” por sus títulos de Copa Libertadores?",
+        "right_answer": "Independiente",
+        "wrong_answers": ["Boca Juniors", "River Plate", "Racing Club"]
     },
     {
         "main_topic": "Deportes",
         "sub_topic": "Atetlas famosos",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿Qué tenista es apodado “Su Majestad” por su elegancia en la cancha?",
+        "right_answer": "Roger Federer",
+        "wrong_answers": ["Rafael Nadal", "Novak Djokovic", "Pete Sampras"]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Atetlas famosos",
+        "question_text": "¿Qué gimnasta ha ganado múltiples medallas olímpicas y es considerada la mejor de la historia?",
+        "right_answer": "Simone Biles",
+        "wrong_answers": ["Nadia Comăneci", "Larisa Latynina", "Svetlana Khorkina"]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Atetlas famosos",
+        "question_text": "¿Qué ciclista ganó 5 Tours de Francia consecutivos entre 1991 y 1995?",
+        "right_answer": "Miguel Induráin",
+        "wrong_answers": ["Alberto Contador", "Alejandro Valverde", "Pedro Delgado"]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Atetlas famosos",
+        "question_text": "¿A que edad debuto Lionel Messi en primera?",
+        "right_answer": "17",
+        "wrong_answers": ["16", "18", "19"]
+    },
+    {
+        "main_topic": "Deportes",
+        "sub_topic": "Atetlas famosos",
+        "question_text": "¿Qué boxeador es conocido como “El Toro Salvaje de las Pampas”?",
+        "right_answer": "Carlos Monzón",
+        "wrong_answers": ["Oscar Bonavena", "Pascual Pérez", "Luis Firpo"]
     },
     {
         "main_topic": "Tv Shows, Películas y Series",
         "sub_topic": "Películas",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿En cuál película de Harry Potter resucita Voldemort?",
+        "right_answer": "El cáliz de fuego",
+        "wrong_answers": ["El prisionero de Azkaban", "La cámara de los secretos", "La orden del Fénix"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Películas",
+        "question_text": "En el señor de los anillos,¿en qué ciudad se encuentra el trono de Gondor?",
+        "right_answer": "Minas Tirith",
+        "wrong_answers": ["Rivendel", "Isengard", "Edoras"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Películas",
+        "question_text": "¿Qué película de Disney presenta a una princesa llamada Ariel?",
+        "right_answer": "La Sirenita",
+        "wrong_answers": ["Frozen", "Enredados", "Mulán"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Películas",
+        "question_text": "¿Qué saga cinematográfica incluye a personajes como Luke Skywalker y Darth Vader?",
+        "right_answer": "Star Wars",
+        "wrong_answers": ["Harry Potter", "El Señor de los Anillos", "Matrix"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Películas",
+        "question_text": "En la película 'Legalmente rubia', ¿cómo se llama la protagonista principal?",
+        "right_answer": "Elle",
+        "wrong_answers": ["Ellie", "Ella", "Ellen"]
     },
     {
         "main_topic": "Tv Shows, Películas y Series",
         "sub_topic": "Series",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "En la serie Friends, ¿cuántas personas componen el grupo principal?",
+        "right_answer": "6",
+        "wrong_answers": ["5", "4", "7"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Series",
+        "question_text": "¿Cómo se llama la serie donde aparece el personaje Sheldon Cooper?",
+        "right_answer": "The Big Bang Theory",
+        "wrong_answers": ["Friends", "The Office", "How I Met Your Mother"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Series",
+        "question_text": "¿Cómo se llama la cárcel ficticia en Prison Break donde empieza la serie?",
+        "right_answer": "Fox River",
+        "wrong_answers": ["San Quentin", "Alcatraz", "Rikers"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Series",
+        "question_text": "¿En qué serie aparecen personajes como El Profesor, Tokio y Berlín?",
+        "right_answer": "La Casa de Papel",
+        "wrong_answers": ["Vis a Vis", "Elite", "Mar de Plástico"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Series",
+        "question_text": "¿Qué serie de Netflix está inspirada en el ajedrez y tiene como protagonista a Beth Harmon?",
+        "right_answer": "The Queen’s Gambit",
+        "wrong_answers": ["The Crown", "Mindhunter", "Dark"]
     },
     {
         "main_topic": "Tv Shows, Películas y Series",
         "sub_topic": "Farándula",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿Quién fue pareja de Benjamín Vicuña antes de la China Suárez?",
+        "right_answer": "Pampita Ardohain",
+        "wrong_answers": ["Nicole Neumann", "Zaira Nara", "Jesica Cirio"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Farándula",
+        "question_text": "¿Qué ex participante de Gran Hermano se hizo conocida por su relación con Daniel Osvaldo?",
+        "right_answer": "Florencia Zaccanti",
+        "wrong_answers": ["Rocío Marengo", "Gianinna Maradona", "Silvina Luna"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Farándula",
+        "question_text": "¿Qué cantante argentino fue pareja de Tini Stoessel?",
+        "right_answer": "Sebastián Yatra",
+        "wrong_answers": ["Paulo Londra", "Duki", "Rusherking"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Farándula",
+        "question_text": "¿Qué famosa argentina fue pareja del cantante Charly García en los 80?",
+        "right_answer": "Cecilia Roth",
+        "wrong_answers": ["Moria Casán", "Susana Giménez", "Graciela Alfano"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Farándula",
+        "question_text": "¿Qué edad tiene Pampita Ardohain?",
+        "right_answer": "47",
+        "wrong_answers": ["49", "50", "53"]
     },
     {
         "main_topic": "Tv Shows, Películas y Series",
         "sub_topic": "Actores y Actrices",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿Qué actriz argentina protagonizó Muñeca Brava y alcanzó fama internacional?",
+        "right_answer": "Natalia Oreiro",
+        "wrong_answers": ["Celeste Cid", "Florencia Peña", "Nancy Dupláa"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Actores y Actrices",
+        "question_text": "¿Qué actor interpretó a Juan Pablo 'Diosito' en El Marginal?",
+        "right_answer": "Nicolás Furtado",
+        "wrong_answers": ["Claudio Rissi", "Juan Minujín", "Esteban Lamothe"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Actores y Actrices",
+        "question_text": "¿Que actriz interpreto a Anrea Sachs, la protagonista en 'El diablo viste a la moda'?",
+        "right_answer": "Anne Hathaway",
+        "wrong_answers": ["Emily Blunt", "Meryl Streep", "Julia Roberts"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Actores y Actrices",
+        "question_text": "¿Qué actriz protagoniza La La Land junto a Ryan Gosling?",
+        "right_answer": "Emma Stone",
+        "wrong_answers": ["Jennifer Lawrence", "Natalie Portman", "Margot Robbie"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Actores y Actrices",
+        "question_text": "¿Qué actor es conocido por interpretar a Wolverine en las películas de X-Men?",
+        "right_answer": "Hugh Jackman",
+        "wrong_answers": ["Ryan Reynolds", "Chris Pratt", "Tom Hardy"]
     },
     {
         "main_topic": "Tv Shows, Películas y Series",
         "sub_topic": "Telenovelas",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿Qué telenovela argentina tenía como protagonista a Romina Yan?",
+        "right_answer": "Chiquititas",
+        "wrong_answers": ["Verano del ‘98", "Rebelde Way", "Montaña Rusa"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Telenovelas",
+        "question_text": "¿Qué telenovela tuvo como protagonista a Lali Espósito en la década de 2010?",
+        "right_answer": "Casi Ángeles",
+        "wrong_answers": ["Patito Feo", "Floricienta", "Chiquititas"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Telenovelas",
+        "question_text": "¿Qué actor protagonizó Vidas Robadas interpretando a Juan Pereda?",
+        "right_answer": "Pablo Echarri",
+        "wrong_answers": ["Facundo Arana", "Nicolás Cabré", "Juan Gil Navarro"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Telenovelas",
+        "question_text": "¿Cúal de las siguientes novelas turcas se trata de una pareja que se hace pasar por hermano y hermana?",
+        "right_answer": "Züleyha",
+        "wrong_answers": ["El Sultán", "El chico de oro", "Todo por mi hija"]
+    },
+    {
+        "main_topic": "Tv Shows, Películas y Series",
+        "sub_topic": "Telenovelas",
+        "question_text": "En 'Educando a Nina',¿cómo se llama la hermana gemela de Nina?",
+        "right_answer": "Mara",
+        "wrong_answers": ["Susy", "Mecha", "Dora"]
     },
     {
         "main_topic": "Creencias y Mitología",
         "sub_topic": "Griegos y Romanos",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿Quién es la diosa romana del amor y la belleza?",
+        "right_answer": "Venus",
+        "wrong_answers": ["Juno", "Minerva", "Diana"]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Griegos y Romanos",
+        "question_text": "¿Qué héroe griego mató a la Hidra de Lerna?",
+        "right_answer": "Hércules",
+        "wrong_answers": ["Perseo", "Aquiles", "Teseo"]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Griegos y Romanos",
+        "question_text": "¿Qué diosa griega representa la sabiduría?",
+        "right_answer": "Atenea",
+        "wrong_answers": ["Artemisa", "Afrodita", "Hera"]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Griegos y Romanos",
+        "question_text": "¿Qué titán robó el fuego para entregárselo a los humanos?",
+        "right_answer": "Prometeo",
+        "wrong_answers": ["Cronos", "Atlas", "Epimeteo"]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Griegos y Romanos",
+        "question_text": "¿Qué héroe griego navegó durante diez años para regresar a Ítaca después de la guerra de Troya?",
+        "right_answer": "Ulises",
+        "wrong_answers": ["Héctor", "Aquiles", "Jasón"]
     },
     {
         "main_topic": "Creencias y Mitología",
         "sub_topic": "Cristianismo",
-        "question_text": "",
+        "question_text": "¿Cuál fue el primer milagro de Jesús según el Evangelio de Juan?",
+        "right_answer": "Convertir agua en vino",
+        "wrong_answers": ["Sanar a un ciego", "Multiplicar los panes", "Caminar sobre el agua"]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Cristianismo",
+        "question_text": "¿Cuál fue la segunda plaga de egipto?",
+        "right_answer": "Plaga de ranas",
+        "wrong_answers": ["Plaga de la oscuridad", "Plaga de úlceras", "Plaga de sangre"]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Cristianismo",
+        "question_text": "¿?",
         "right_answer": "",
-        "wrong_answers": []
+        "wrong_answers": ["", "", ""]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Cristianismo",
+        "question_text": "¿?",
+        "right_answer": "",
+        "wrong_answers": ["", "", ""]
+    },
+    {
+        "main_topic": "Creencias y Mitología",
+        "sub_topic": "Cristianismo",
+        "question_text": "¿?",
+        "right_answer": "",
+        "wrong_answers": ["", "", ""]
     },
     {
         "main_topic": "Creencias y Mitología",
         "sub_topic": "Hinduismo",
-        "question_text": "",
+        "question_text": "¿?",
         "right_answer": "",
-        "wrong_answers": []
+        "wrong_answers": ["", "", ""]
     },
     {
         "main_topic": "Creencias y Mitología",
         "sub_topic": "Egipcia",
-        "question_text": "",
+        "question_text": "¿?",
         "right_answer": "",
-        "wrong_answers": []
+        "wrong_answers": ["", "", ""]
     },
     {
         "main_topic": "Creencias y Mitología",
         "sub_topic": "Nórdica",
-        "question_text": "",
+        "question_text": "¿?",
         "right_answer": "",
-        "wrong_answers": []
+        "wrong_answers": ["", "", ""]
     },
     {
         "main_topic": "Historia",
