@@ -1061,37 +1061,149 @@
     {
         "main_topic": "Historia",
         "sub_topic": "Historia Argentina",
-        "question_text": "",
+        "question_text": "¿?",
         "right_answer": "",
-        "wrong_answers": []
+        "wrong_answers": ["", "", ""]
     },
     {
         "main_topic": "Historia",
         "sub_topic": "Guerras",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿En qué año comenzó la Segunda Guerra Mundial?",
+        "right_answer": "1939",
+        "wrong_answers": ["1914", "1945", "1950"]
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Guerras",
+        "question_text": "¿Qué país lanzó las bombas atómicas sobre Hiroshima y Nagasaki en 1945?",
+        "right_answer": "Estados Unidos",
+        "wrong_answers": ["Alemania", "Japón", "Reino Unido"]
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Guerras",
+        "question_text": "¿Qué imperio fue derrotado en las Guerras Médicas contra los griegos?",
+        "right_answer": "Persa",
+        "wrong_answers": ["Egipcio", "Romano", "Cartaginés"]
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Guerras",
+        "question_text": "¿Qué conflicto se conoce como la “Gran Guerra”?",
+        "right_answer": "Primera Guerra Mundial",
+        "wrong_answers": ["Segunda Guerra Mundial", "Guerra de Corea", "Guerra Fría"]
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Guerras",
+        "question_text": "¿Qué guerra enfrentó a Inglaterra y Francia entre 1337 y 1453?",
+        "right_answer": "Guerra de los Cien Años",
+        "wrong_answers": ["Guerra de las Rosas", "Guerra Franco-Prusiana", "Guerra Puritana"]
     },
     {
         "main_topic": "Historia",
         "sub_topic": "Personajes Históricos",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿Quién fue el primer emperador romano?",
+        "right_answer": "Augusto",
+        "wrong_answers": ["Julio César", "Nerón", "Trajano"]
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Personajes Históricos",
+        "question_text": "¿Quién fue la reina de Francia durante la Revolución Francesa y murió guillotinada?",
+        "right_answer": "María Antonieta",
+        "wrong_answers": ["Catalina la Grande", "Isabel I", "Juana de Arco"]
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Personajes Históricos",
+        "question_text": "¿Quién fue el libertador de gran parte de Sudamérica y es conocido como “El Libertador”?",
+        "right_answer": "Simón Bolívar",
+        "wrong_answers": ["José de San Martín", "Francisco de Miranda", "Antonio José de Sucre"]
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Personajes Históricos",
+        "question_text": "¿Qué físico formuló la teoría de la relatividad?",
+        "right_answer": "Albert Einstein",
+        "wrong_answers": ["Isaac Newton", "Galileo Galilei", "Stephen Hawking"]
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Personajes Históricos",
+        "question_text": "¿Qué emperador francés fue derrotado en la batalla de Waterloo en 1815?",
+        "right_answer": "Napoleón Bonaparte",
+        "wrong_answers": ["Luis XIV", "Carlos X", "Enrique IV"]
     },
     {
         "main_topic": "Historia",
         "sub_topic": "Civilizaciones",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿Qué civilización mesoamericana es famosa por su calendario y por la ciudad de Chichén Itzá?",
+        "right_answer": "Mayas",
+        "wrong_answers": ["Aztecas", "Incas", "Toltecas"]
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Civilizaciones",
+        "question_text": "¿Qué imperio construyó una red de carreteras que conectaba casi toda Europa, África del Norte y parte de Asia?",
+        "right_answer": "Imperio Romano",
+        "wrong_answers": ["Imperio Persa", "Imperio Bizantino", "Imperio Otomano"]
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Civilizaciones",
+        "question_text": "¿Qué civilización construyó Machu Picchu?",
+        "right_answer": "Incas",
+        "wrong_answers": ["Aztecas", "Olmecas", "Mayas"]
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Civilizaciones",
+        "question_text": "¿Qué pueblo inventó el alfabeto que sirvió de base para el griego y el latino?",
+        "right_answer": "Fenicios",
+        "wrong_answers": ["Persas", "Cartagineses", "Etruscos"]
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Civilizaciones",
+        "question_text": "¿Qué civilización mesopotámica es famosa por el Código de Hammurabi, una de las primeras recopilaciones de leyes?",
+        "right_answer": "Babilonios",
+        "wrong_answers": ["Sumerios", "Asirios", "Acadios"]
     },
     {
         "main_topic": "Historia",
         "sub_topic": "Filosofía",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿Quién es considerado el “padre de la filosofía occidental”?",
+        "right_answer": "Tales de Mileto",
+        "wrong_answers": ["Sócrates", "Aristóteles", "Platón"]
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Filosofía",
+        "question_text": "¿Quién escribió La República?",
+        "right_answer": "Platón",
+        "wrong_answers": ["Aristóteles", "Epicuro", "Cicerón"]
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Filosofía",
+        "question_text": "¿Qué filósofo creó el método de la duda sistemática y dijo: “Pienso, luego existo”?",
+        "right_answer": "René Descartes",
+        "wrong_answers": ["John Locke", "David Hume", "Blaise Pascal"]
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Filosofía",
+        "question_text": "¿Qué corriente filosófica griega defendía la búsqueda del placer moderado como camino hacia la felicidad?",
+        "right_answer": "Epicureísmo",
+        "wrong_answers": ["Estoicismo", "Cinismo", "Hedonismo"]
+    },
+    {
+        "main_topic": "Historia",
+        "sub_topic": "Filosofía",
+        "question_text": "¿Qué filósofo francés escribió El contrato social e influyó en la Revolución Francesa?",
+        "right_answer": "Rousseau",
+        "wrong_answers": ["Montesquieu", "Voltaire", "Diderot"]
     },
     {
         "main_topic": "Variado",
@@ -1233,14 +1345,42 @@
         "right_answer": "Bluetooth",
         "wrong_answers": ["Wi-Fi", "USB", "Ethernet"]
     },
-
     {
         "main_topic": "Variado",
         "sub_topic": "Asesinos Seriales",
-        "question_text": "",
-        "right_answer": "",
-        "wrong_answers": []
+        "question_text": "¿Qué asesino serial británico aterrorizó el barrio de Whitechapel en Londres en 1888?",
+        "right_answer": "Jack el Destripador",
+        "wrong_answers": ["Ted Bundy", "Charles Manson", "Harold Shipman"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Asesinos Seriales",
+        "question_text": "¿Qué asesino estadounidense guardaba restos humanos en su casa y fue apodado “el Caníbal de Milwaukee”?",
+        "right_answer": "Jeffrey Dahmer",
+        "wrong_answers": ["John Wayne Gacy", "Richard Ramirez", "Ed Gein"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Asesinos Seriales",
+        "question_text": "¿En qué década actuó mayormente Ted Bundy en Estados Unidos?",
+        "right_answer": "1970s",
+        "wrong_answers": ["1950s", "1960s", "1980s"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Asesinos Seriales",
+        "question_text": "¿Qué asesino serial chileno fue apodado “El Psicópata de Alto Hospicio”?",
+        "right_answer": "Julio Pérez Silva",
+        "wrong_answers": ["Jorge Martínez", "Luis Núñez", "Manuel Contreras"]
+    },
+    {
+        "main_topic": "Variado",
+        "sub_topic": "Asesinos Seriales",
+        "question_text": "¿Qué asesino serial inspiró a personajes de cine como Norman Bates (Psycho) y Leatherface (The Texas Chainsaw Massacre)?",
+        "right_answer": "Ed Gein",
+        "wrong_answers": ["Richard Speck", "Ted Bundy", "Albert Fish"]
     }
+
     
 
 
