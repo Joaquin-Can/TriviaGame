@@ -94,7 +94,7 @@
         "sub_topic": "Biología",
         "question_text": "¿Qué país habita el dragon de komodo?",
         "right_answer": "Indonesia",
-        "wrong_answers": ["La India", "Nepal", "Tailandia"]
+        "wrong_answers": ["India", "Nepal", "Tailandia"]
     },
     {
         "main_topic": "Ciencia",
@@ -186,7 +186,7 @@
         "sub_topic": "Biomas",
         "question_text": "¿Cuál es el bioma más extenso del planeta?",
         "right_answer": "La taiga",
-        "wrong_answers": ["Sabana", "Selva tropical", "Océano"]
+        "wrong_answers": ["Sabana", "Selva tropical", "La tundra"]
 
     },
     {

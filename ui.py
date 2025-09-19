@@ -5,11 +5,16 @@ import tkinter as tk
 from tkinter import messagebox
 from PIL import Image, ImageTk
 import os
+import pygame
 
 root = tk.Tk()
 root.title("Trivia Game")
 root.attributes("-fullscreen", True)
 root.bind("<Escape>", lambda e: root.attributes("-fullscreen", False))
+
+pygame.mixer.init()
+correct_sound = pygame.mixer.Sound("sounds/correct.wav")
+wrong_sound = pygame.mixer.Sound("sounds/wrong.wav")
 
 menu_frame = tk.Frame(root, bg="blue")
 menu_frame.pack(expand=True)
@@ -189,20 +194,23 @@ def load_question():
 def check_answer(selected_answer):
     global current_team, remaining_questions
 
-    # Disable all buttons to prevent multiple clicks
+    # Disables all buttons to prevent multiple clicks
     for btn in answer_buttons:
         btn.config(state="disabled")
 
-    # Turn buttons red/green
+    
     for btn in answer_buttons:
         if btn.cget("text") == current_question.right_answer:
-            btn.config(bg="green", fg="white")  # correct answer is green
+            btn.config(bg="green", fg="white")
         elif btn.cget("text") == selected_answer:
-            btn.config(bg="red", fg="white")  # selected wrong answer is red
+            btn.config(bg="red", fg="white")
     
     # Update score if correct
     if current_question.is_correct(selected_answer):
         scores[current_team] += 1
+        correct_sound.play()   # 🔊 play correct sound
+    else:
+        wrong_sound.play()     # 🔊 play wrong sound
 
     remaining_questions.remove(current_question)
 
@@ -211,7 +219,7 @@ def check_answer(selected_answer):
     team_label.config(text=f"Current team: {current_team}")
     score_label.config(text=f"Team A: {scores['Team A']}  |  Team B: {scores['Team B']}")
 
-    # Back to topic selection
+    
     root.after(1500, lambda: reset_buttons_and_show_topics())
 
 def reset_buttons_and_show_topics():
@@ -360,7 +368,7 @@ def start_question(topic, subtopic):
     for btn in answer_buttons:
         btn.config(text="", state="disabled")
 
-    # Show "Show Answers" button
+    
     show_answers_button.pack(pady=20)
     show_answers_button.config(state="normal")
 
@@ -395,7 +403,7 @@ def reveal_answers():
 show_answers_button = tk.Button(
     root,
     text="Show Answers",
-    font=("Arial", 24),
+    font=("Arial", 30),
     width=20,
     height=2
 )
