@@ -4,17 +4,23 @@ from questions import Question
 import tkinter as tk
 from tkinter import messagebox
 from PIL import Image, ImageTk
-import os
+import os, sys
 import pygame
 
+def resource_path(relative_path):
+    """ Get absolute path to resource, works in dev and in PyInstaller exe """
+    if hasattr(sys, "_MEIPASS"):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.abspath("."), relative_path)
+    
 root = tk.Tk()
 root.title("Trivia Game")
 root.attributes("-fullscreen", True)
 root.bind("<Escape>", lambda e: root.attributes("-fullscreen", False))
 
 pygame.mixer.init()
-correct_sound = pygame.mixer.Sound("sounds/correct.wav")
-wrong_sound = pygame.mixer.Sound("sounds/wrong.wav")
+correct_sound = pygame.mixer.Sound(resource_path("sounds/correct.wav"))
+wrong_sound = pygame.mixer.Sound(resource_path("sounds/wrong.wav"))
 
 menu_frame = tk.Frame(root, bg="blue")
 menu_frame.pack(expand=True)
@@ -52,7 +58,7 @@ topic_frame.pack_forget()
 subtopic_frame = tk.Frame(root)
 subtopic_frame.pack_forget()
 
-with open("questions.json", "r", encoding="utf-8") as f:
+with open(resource_path("questions.json"), "r", encoding="utf-8") as f:
     content = json.load(f)
 
 list_of_questions = []
@@ -136,7 +142,7 @@ def load_button_image(path, target_width, target_height):
         print(f"Error loading image {path}: {e}")
         return None
 
-menu_bg_img = load_button_image("images/menu_bg.jpg", root.winfo_screenwidth(), root.winfo_screenheight())
+menu_bg_img = load_button_image(resource_path("images/menu_bg.jpg"), root.winfo_screenwidth(), root.winfo_screenheight())
 
 def show_menu():
     menu_frame.pack(expand=True)
@@ -259,7 +265,7 @@ def show_topics():
 
     for i, topic in enumerate(available_topics):
         image_path = f"images/{topic}.jpg"
-        img = load_button_image(image_path, button_width, button_height)
+        img = load_button_image(resource_path(image_path), button_width, button_height)
         button_images[topic] = img  # keep reference
 
         btn = tk.Button(
@@ -306,7 +312,7 @@ def show_subtopics(chosen_topic):
 
     for i, subtopic in enumerate(available_subtopics):
         image_path = f"images/{chosen_topic}_{subtopic}.jpg"
-        img = load_button_image(image_path, button_width, button_height)
+        img = load_button_image(resource_path(image_path), button_width, button_height)
         button_images[f"{chosen_topic}_{subtopic}"] = img
 
         btn = tk.Button(
